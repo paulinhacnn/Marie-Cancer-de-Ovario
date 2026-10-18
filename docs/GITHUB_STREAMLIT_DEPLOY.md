@@ -56,7 +56,7 @@ Substitua `SEU_USUARIO` pela conta correta. O repositório precisa estar criado 
 Depois que o Streamlit fornecer seu endereço `https://...streamlit.app`, edite o começo do `README.md`:
 
 ```md
-[🌐 Abrir observatório / Open live app](https://SEU-ENDERECO-REAL.streamlit.app)
+[🌐 Abrir observatório / Open live app](https://marie-cancer-de-ovario-fapesp.streamlit.app/)
 ```
 
 O texto `SEU-ENDERECO-REAL` é **um exemplo**: não publique esse endereço até substituí-lo pelo URL fornecido pelo Streamlit.
