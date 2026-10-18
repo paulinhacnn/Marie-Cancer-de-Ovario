@@ -1,0 +1,347 @@
+{
+  "schemaVersion": "ovarian-risk-1.0",
+  "reviewed_at": "2026-10-18",
+  "isSynthetic": false,
+  "definition": "Fator de risco é uma característica ou exposição associada a maior chance de desenvolver uma doença em uma população. Sua presença não determina um diagnóstico. Este catálogo distingue fatores de câncer de ovário, associações com menor risco, evidências em estudo e contexto social; não calcula um escore individual.",
+  "adapted_from": {
+    "filename": "OncoLens_Observatorio_Risco_Populacional_Documento_Tecnico_Cientifico(1).docx",
+    "scope_original": "Observatório Brasileiro de Risco Populacional de Câncer de Mama; tabelas 6 e 10.",
+    "adaptation_note": "Os fatores e as regras foram revistos para câncer de ovário com fontes específicas. As regras de câncer de mama, inclusive PALB2, ADH/ALH/LCIS, álcool, cortes reprodutivos e obesidade pós-menopausa, não foram transferidas automaticamente. Idade e IMC são as características de risco disponíveis neste extrato; os demais atributos clínicos/hereditários não foram extraídos."
+  },
+  "categories": [
+    {
+      "id": "demographic",
+      "label": "Idade e população"
+    },
+    {
+      "id": "hereditary",
+      "label": "História familiar e hereditariedade"
+    },
+    {
+      "id": "reproductive",
+      "label": "História clínica, reprodutiva e hormonal"
+    },
+    {
+      "id": "metabolic",
+      "label": "Adiposidade e metabolismo"
+    },
+    {
+      "id": "dietary",
+      "label": "Alimentação e evidências em estudo"
+    },
+    {
+      "id": "context",
+      "label": "Contexto social e ambiental"
+    }
+  ],
+  "items": [
+    {
+      "id": "age",
+      "label": "Avanço da idade",
+      "category": "demographic",
+      "direction": "increased",
+      "evidence": "Padrão epidemiológico reconhecido pelo INCA.",
+      "explanation": "A incidência do carcinoma epitelial de ovário aumenta com a idade. A estratificação etária descreve a população; não estima a probabilidade individual de desenvolver a doença.",
+      "measurement": "Disponível em faixas etárias na PNS 2019. A idade funciona como filtro e não identifica, por si só, o estado menopausal.",
+      "metric": null,
+      "source_urls": [
+        "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-populacao",
+        "https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html"
+      ]
+    },
+    {
+      "id": "family_history",
+      "label": "História familiar de câncer de ovário",
+      "category": "hereditary",
+      "direction": "increased",
+      "evidence": "Fator reconhecido; evidência sólida na síntese do NCI.",
+      "explanation": "O histórico em parentes de primeiro grau, como mãe, irmã ou filha, está associado a maior risco. História familiar e predisposição genética exigem informações próprias.",
+      "measurement": "Não disponível neste extrato da PNS 2019. Informação não registrada no painel não significa característica ausente na pessoa.",
+      "metric": null,
+      "source_urls": [
+        "https://www.cancer.gov/types/ovarian/hp/ovarian-prevention-pdq",
+        "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-profissionais-de-saude"
+      ]
+    },
+    {
+      "id": "brca1_brca2",
+      "label": "Variantes patogênicas em BRCA1 ou BRCA2",
+      "category": "hereditary",
+      "direction": "increased",
+      "evidence": "Predisposição hereditária reconhecida pelo INCA e NCI.",
+      "explanation": "Variantes germinativas patogênicas nesses genes aumentam a suscetibilidade ao câncer de ovário. Sua identificação depende de avaliação genética, sem imputação pela UF, idade ou escolaridade.",
+      "measurement": "Não disponível neste extrato da PNS 2019. Informação não registrada no painel não significa característica ausente na pessoa.",
+      "metric": null,
+      "source_urls": [
+        "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+        "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-populacao"
+      ]
+    },
+    {
+      "id": "lynch",
+      "label": "Síndrome de Lynch",
+      "category": "hereditary",
+      "direction": "increased",
+      "evidence": "Síndrome hereditária reconhecida pelo NCI.",
+      "explanation": "A síndrome de Lynch está associada a maior risco de câncer de ovário. O catálogo registra a relação epidemiológica, sem classificar geneticamente as entrevistadas.",
+      "measurement": "Não disponível neste extrato da PNS 2019. Informação não registrada no painel não significa característica ausente na pessoa.",
+      "metric": null,
+      "source_urls": [
+        "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq",
+        "https://www.cancer.gov/types/ovarian/patient/ovarian-prevention-pdq"
+      ]
+    },
+    {
+      "id": "endometriosis",
+      "label": "Endometriose",
+      "category": "reproductive",
+      "direction": "increased",
+      "evidence": "Associação reconhecida; varia por subtipo histológico.",
+      "explanation": "A associação com câncer de ovário é mais forte para os carcinomas endometrioide e de células claras. Os achados não devem ser tratados como iguais para todos os subtipos.",
+      "measurement": "Não disponível neste extrato da PNS 2019. Informação não registrada no painel não significa característica ausente na pessoa.",
+      "metric": null,
+      "source_urls": [
+        "https://www.cancer.gov/types/ovarian/hp/ovarian-prevention-pdq",
+        "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-profissionais-de-saude"
+      ]
+    },
+    {
+      "id": "menopausal_hormone_therapy",
+      "label": "Terapia hormonal após a menopausa",
+      "category": "reproductive",
+      "direction": "increased",
+      "evidence": "Associação de pequena magnitude; evidência moderada na síntese do NCI.",
+      "explanation": "Uso atual ou recente de terapia hormonal na menopausa se associa a pequeno aumento de risco. Tempo desde o uso, duração e formulação precisam ser considerados na avaliação clínica.",
+      "measurement": "Uso, tipo, duração e tempo desde o término não estão disponíveis neste extrato. Não classificar exposição pela idade nem criar uma categoria de uso prolongado sem duração.",
+      "metric": null,
+      "source_urls": [
+        "https://www.cancer.gov/types/ovarian/hp/ovarian-prevention-pdq"
+      ]
+    },
+    {
+      "id": "nulliparity",
+      "label": "Nuliparidade: nenhum parto",
+      "category": "reproductive",
+      "direction": "increased",
+      "evidence": "Associação epidemiológica reconhecida pelo INCA.",
+      "explanation": "Mulheres sem partos apresentam maior risco em comparação com mulheres que tiveram partos. Nuliparidade significa nenhum parto; nuligestação significa nunca ter engravidado.",
+      "measurement": "História de gestações e partos não está disponível neste extrato. Não inferir nuliparidade por idade, estado conjugal ou composição do domicílio.",
+      "metric": null,
+      "source_urls": [
+        "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-populacao",
+        "https://www.cancer.gov/types/ovarian/hp/ovarian-prevention-pdq"
+      ]
+    },
+    {
+      "id": "childbirth_parity",
+      "label": "História de partos: paridade",
+      "category": "reproductive",
+      "direction": "decreased",
+      "evidence": "Associação com menor risco em estudos populacionais.",
+      "explanation": "Ter tido partos se associa a menor risco em comparação com a nuliparidade. Este é o mesmo eixo reprodutivo do item anterior; as duas descrições não são fatores independentes a somar.",
+      "measurement": "Número de partos e história de gestações não estão disponíveis neste extrato. A informação não constitui orientação para decisões reprodutivas.",
+      "metric": null,
+      "source_urls": [
+        "https://www.cancer.gov/types/ovarian/patient/ovarian-prevention-pdq",
+        "https://www.cancer.gov/types/ovarian/hp/ovarian-prevention-pdq"
+      ]
+    },
+    {
+      "id": "oral_contraceptives",
+      "label": "Uso de contraceptivos orais",
+      "category": "reproductive",
+      "direction": "decreased",
+      "evidence": "Associação consistente com menor risco; sínteses INCA e NCI.",
+      "explanation": "O uso de contraceptivos orais se associa a menor risco de câncer de ovário, com influência da duração e do tempo desde o último uso. A evidência não deve ser aplicada indistintamente a todo método hormonal.",
+      "measurement": "Tipo, duração e histórico de uso não estão disponíveis neste extrato. O catálogo não orienta iniciar ou suspender contraceptivos.",
+      "metric": null,
+      "source_urls": [
+        "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-profissionais-de-saude",
+        "https://www.cancer.gov/types/ovarian/hp/ovarian-prevention-pdq"
+      ]
+    },
+    {
+      "id": "breastfeeding",
+      "label": "História de amamentação",
+      "category": "reproductive",
+      "direction": "decreased",
+      "evidence": "Associação consistente com menor risco na síntese do NCI.",
+      "explanation": "Estudos populacionais associam amamentação a menor risco de câncer de ovário. A duração acumulada faz parte da avaliação da exposição.",
+      "measurement": "História e duração de amamentação não estão disponíveis neste extrato. Informação ausente não equivale a nunca ter amamentado.",
+      "metric": null,
+      "source_urls": [
+        "https://www.cancer.gov/types/ovarian/hp/ovarian-prevention-pdq",
+        "https://www.cancer.gov/types/ovarian/patient/ovarian-prevention-pdq"
+      ]
+    },
+    {
+      "id": "menstrual_span",
+      "label": "Menarca precoce e menopausa tardia",
+      "category": "reproductive",
+      "direction": "uncertain",
+      "evidence": "Possíveis associações; manter a incerteza descrita pelo INCA.",
+      "explanation": "O INCA cita possíveis associações com o início precoce da menstruação e a menopausa tardia. Não foram adotados cortes de classificação ou uma pontuação a partir da tabela de câncer de mama.",
+      "measurement": "Idade na menarca e estado/idade da menopausa não estão disponíveis neste extrato. Faixa etária não substitui essas informações.",
+      "metric": null,
+      "source_urls": [
+        "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-populacao"
+      ]
+    },
+    {
+      "id": "adiposity",
+      "label": "Adiposidade e IMC elevado",
+      "category": "metabolic",
+      "direction": "increased",
+      "evidence": "Associação reconhecida, de magnitude modesta e dependente do contexto.",
+      "explanation": "INCA e NCI relacionam maior adiposidade ao câncer de ovário. O NCI descreve associação modesta do IMC, com diferenças conforme o uso de terapia hormonal. IMC não fornece uma probabilidade de câncer.",
+      "measurement": "Disponível: IMC ≥30 kg/m² com peso e altura referidos, incluindo imputações do IBGE. O indicador exclui gestantes e gravidez desconhecida. Não representa obesidade pós-menopausa, pois esse estado não foi extraído.",
+      "metric": "obesity",
+      "source_urls": [
+        "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-populacao",
+        "https://www.cancer.gov/types/ovarian/hp/ovarian-prevention-pdq",
+        "https://biblioteca.ibge.gov.br/visualizacao/instrumentos_de_coleta/doc5569.pdf"
+      ]
+    },
+    {
+      "id": "ultra_processed",
+      "label": "Ultraprocessados: associação observacional",
+      "category": "dietary",
+      "direction": "uncertain",
+      "evidence": "Associação prospectiva observacional; causalidade não estabelecida.",
+      "explanation": "Chang e colaboradores encontraram maior incidência e mortalidade por câncer de ovário no UK Biobank com maior participação de ultraprocessados no peso da dieta. O estudo não estabelece causalidade nem um risco individual aplicável à PNS.",
+      "measurement": "A PNS disponível mede consumo de grupos no dia anterior. Não mede a porcentagem do peso da dieta usada no UK Biobank; por isso não permite aplicar seus HR ao recorte.",
+      "metric": null,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9985039/",
+        "https://biblioteca.ibge.gov.br/visualizacao/instrumentos_de_coleta/doc5569.pdf"
+      ]
+    },
+    {
+      "id": "citrus",
+      "label": "Cítricos e flavanonas",
+      "category": "dietary",
+      "direction": "uncertain",
+      "evidence": "Evidência observacional inconclusiva para prevenção.",
+      "explanation": "Achados sobre flavanonas não comprovam que laranja ou suco previnam câncer de ovário. No estudo de Cassidy, as análises dos alimentos laranja e suco não demonstraram associação estatisticamente significativa.",
+      "measurement": "Frutas gerais e grupos alimentares da PNS não isolam cítricos nem quantificam flavanonas. Não há uma medida específica dessa exposição no extrato.",
+      "metric": null,
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4196485/",
+        "https://www.cancer.gov/types/ovarian/patient/ovarian-prevention-pdq",
+        "https://biblioteca.ibge.gov.br/visualizacao/instrumentos_de_coleta/doc5569.pdf"
+      ]
+    },
+    {
+      "id": "alcohol",
+      "label": "Álcool: relação específica com ovário incerta",
+      "category": "dietary",
+      "direction": "uncertain",
+      "evidence": "Associação específica não estabelecida na síntese do NCI.",
+      "explanation": "O NCI não identifica uma associação clara entre consumo de álcool e câncer de ovário. Sua presença na tabela original de câncer de mama não justifica classificá-lo aqui como fator comprovado de ovário.",
+      "measurement": "O extrato atual não inclui um indicador de álcool. Não foi criada prevalência nem categoria de risco para essa exposição.",
+      "metric": null,
+      "source_urls": [
+        "https://www.cancer.gov/types/ovarian/patient/ovarian-prevention-pdq"
+      ]
+    },
+    {
+      "id": "water",
+      "label": "Abastecimento e tratamento da água",
+      "category": "context",
+      "direction": "context",
+      "evidence": "Indicadores de infraestrutura e condições de vida.",
+      "explanation": "Neste painel, a água caracteriza o contexto domiciliar e territorial. Rede geral e tratamento doméstico não medem contaminantes, dose de exposição nem potabilidade laboratorial.",
+      "measurement": "Há indicadores contextuais na PNS 2019 e no Censo 2022, com universos diferentes. Eles não classificam suscetibilidade individual ao câncer de ovário.",
+      "metric": null,
+      "source_urls": [
+        "https://biblioteca.ibge.gov.br/visualizacao/instrumentos_de_coleta/doc5569.pdf",
+        "https://sidra.ibge.gov.br/tabela/6803"
+      ]
+    },
+    {
+      "id": "education",
+      "label": "Escolaridade",
+      "category": "context",
+      "direction": "context",
+      "evidence": "Estratificação social; sem coeficiente de risco oncológico.",
+      "explanation": "A escolaridade descreve diferenças sociais entre os grupos observados. O painel a utiliza para organizar a análise, sem convertê-la em predisposição biológica ou probabilidade de câncer.",
+      "measurement": "Disponível para estratificação e descrição na PNS 2019. Não é uma medida clínica de risco de câncer de ovário.",
+      "metric": null,
+      "source_urls": [
+        "https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html",
+        "https://biblioteca.ibge.gov.br/visualizacao/instrumentos_de_coleta/doc5569.pdf"
+      ]
+    },
+    {
+      "id": "idhm",
+      "label": "IDHM e IDHM Educação",
+      "category": "context",
+      "direction": "context",
+      "evidence": "Contexto territorial de desenvolvimento humano.",
+      "explanation": "O IDHM sintetiza longevidade, educação e renda de uma população. No painel, sua comparação entre UFs é ecológica e não representa risco individual de câncer de ovário.",
+      "measurement": "Disponível como contexto territorial em fonte externa à PNS. Preservar o ano da série utilizada; o índice não equivale à escolaridade da entrevistada.",
+      "metric": null,
+      "source_urls": [
+        "https://www.undp.org/pt/brazil/desenvolvimento-humano/painel-idhm"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "INCA — Câncer de ovário: versão para população",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-populacao"
+    },
+    {
+      "title": "INCA — Câncer de ovário: versão para profissionais de saúde",
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-profissionais-de-saude"
+    },
+    {
+      "title": "NCI — Prevenção dos cânceres de ovário, tuba e peritônio (PDQ), versão profissional",
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-prevention-pdq"
+    },
+    {
+      "title": "NCI — Câncer epitelial de ovário, tuba e peritônio (PDQ): fatores de risco",
+      "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-epithelial-treatment-pdq"
+    },
+    {
+      "title": "NCI — Prevenção dos cânceres de ovário, tuba e peritônio (PDQ), versão para pacientes",
+      "url": "https://www.cancer.gov/types/ovarian/patient/ovarian-prevention-pdq"
+    },
+    {
+      "title": "Chang et al., 2023 — Ultraprocessados, incidência e mortalidade por câncer no UK Biobank",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9985039/"
+    },
+    {
+      "title": "Cassidy et al., 2014 — Flavonoides alimentares e risco de câncer epitelial de ovário",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4196485/"
+    },
+    {
+      "title": "IBGE — Pesquisa Nacional de Saúde",
+      "url": "https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html"
+    },
+    {
+      "title": "IBGE — Questionário da Pesquisa Nacional de Saúde 2019",
+      "url": "https://biblioteca.ibge.gov.br/visualizacao/instrumentos_de_coleta/doc5569.pdf"
+    },
+    {
+      "title": "IBGE — Censo Demográfico 2022: abastecimento de água, tabela SIDRA 6803",
+      "url": "https://sidra.ibge.gov.br/tabela/6803"
+    },
+    {
+      "title": "PNUD — Painel do Índice de Desenvolvimento Humano Municipal",
+      "url": "https://www.undp.org/pt/brazil/desenvolvimento-humano/painel-idhm"
+    }
+  ],
+  "limitations": [
+    "Catálogo selecionado para educação e planejamento; não é uma lista exaustiva, diretriz clínica ou revisão sistemática nova.",
+    "As fontes tratam principalmente de carcinoma epitelial de ovário e, em parte, agrupam ovário, tuba e peritônio. A magnitude das associações pode variar por subtipo; não generalizar a todos os tumores ovarianos.",
+    "Os descritores de evidência resumem as fontes consultadas; não representam uma avaliação GRADE própria.",
+    "As categorias increased e decreased descrevem a direção da associação. uncertain identifica uma relação ainda não estabelecida ou inconclusiva; context descreve condições de vida. Nenhuma categoria fornece probabilidade individual.",
+    "Somente idade e o indicador de IMC ≥30 estão disponíveis entre as características de risco reconhecidas selecionadas. Outros atributos clínicos/hereditários não estão neste extrato; isso não significa que estejam ausentes nas pessoas ou em toda a PNS.",
+    "A PNS é transversal e o diagnóstico é autorreferido. Dieta ou IMC atuais podem ser posteriores ao diagnóstico; os cruzamentos não estimam incidência, prognóstico ou causalidade.",
+    "Não somar fatores, multiplicar HR, criar pontos, imputar mutações ou derivar risco absoluto. História familiar e variantes genéticas podem se sobrepor; nuliparidade e paridade descrevem o mesmo eixo.",
+    "Os HR do UK Biobank usam porcentagem do peso da dieta. O indicador de grupos de ultraprocessados da PNS mede outra exposição.",
+    "Comparações territoriais de água, escolaridade e IDHM não vinculam as mesmas pessoas nem medem suscetibilidade clínica.",
+    "As associações reprodutivas e hormonais não constituem orientação para engravidar, amamentar, iniciar ou suspender medicamentos."
+  ]
+}

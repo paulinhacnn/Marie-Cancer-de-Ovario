@@ -1,0 +1,424 @@
+{
+  "study_id": "Chang_2023_UKBiobank_UPF",
+  "title": "Ultra-processed food consumption, cancer risk and cancer mortality: a large-scale prospective analysis within the UK Biobank",
+  "authors_short": "Chang K et al.",
+  "journal": "eClinicalMedicine",
+  "volume": 56,
+  "article_number": "101840",
+  "publication_date": "2023-01-31",
+  "doi": "10.1016/j.eclinm.2023.101840",
+  "url": "https://doi.org/10.1016/j.eclinm.2023.101840",
+  "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9985039/",
+  "design": "Prospective observational cohort",
+  "cohort": {
+    "n_total": 197426,
+    "n_female": 107919,
+    "n_male": 89507,
+    "age_recruitment_years": [
+      40,
+      69
+    ],
+    "mean_age_years": 58.0,
+    "dietary_recalls_years": [
+      2009,
+      2012
+    ],
+    "dietary_recalls_per_participant": [
+      1,
+      5
+    ],
+    "excluded_preexisting_cancer_n": 12680
+  },
+  "exposure_primary": {
+    "classification": "NOVA group 4",
+    "measure": "percentage of dietary weight in g/day attributable to ultra-processed foods and beverages",
+    "formula": "100 * UPF_g_per_day / total_diet_g_per_day",
+    "aggregation": "average across available 24-hour dietary recalls",
+    "increment_percentage_points": 10,
+    "basis": "weight",
+    "not_energy": true,
+    "includes_low_or_zero_calorie_items": true
+  },
+  "ovarian": {
+    "icd10": "C56",
+    "n_in_both_ovarian_models": 107919,
+    "incidence": {
+      "cases": 291,
+      "hr": 1.19,
+      "ci95": [
+        1.08,
+        1.3
+      ],
+      "p": "<0.001",
+      "bonferroni_corrected_p": "<0.05",
+      "source": "Main Table 2; Supplement Table S1, page 3",
+      "published_rate_per_1000_person_years": 0.28,
+      "exact_person_years": null,
+      "exact_person_years_status": "not reported specifically for ovarian cancer in inspected main article or appendix",
+      "q4_vs_q1_hr": 1.45,
+      "q4_vs_q1_ci95": [
+        0.98,
+        2.15
+      ],
+      "quartile_trend_p": 0.03
+    },
+    "mortality": {
+      "deaths": 143,
+      "hr": 1.3,
+      "ci95": [
+        1.13,
+        1.5
+      ],
+      "p": "<0.001",
+      "bonferroni_corrected_p": "<0.05",
+      "source": "Main Table 3; Supplement Table S2, page 4",
+      "published_rate_per_1000_person_years": 0.13,
+      "exact_person_years": null,
+      "exact_person_years_status": "not reported specifically for ovarian cancer in inspected main article or appendix",
+      "endpoint": "ovarian cancer as primary/underlying cause of death in the baseline cohort",
+      "is_post_diagnosis_survival_analysis": false,
+      "q4_vs_q1_hr": 1.91,
+      "q4_vs_q1_ci95": [
+        1.08,
+        3.39
+      ],
+      "quartile_trend_p": 0.005
+    },
+    "sensitivity_energy_share": {
+      "increment_percentage_points": 10,
+      "basis": "energy kcal/day",
+      "incidence_hr": 1.11,
+      "incidence_ci95": [
+        1.02,
+        1.22
+      ],
+      "mortality_hr": 1.2,
+      "mortality_ci95": [
+        1.05,
+        1.37
+      ],
+      "source": "Supplement Tables S6 and S7, pages 15 and 16"
+    }
+  },
+  "follow_up_all_cohort_not_ovarian_denominators": {
+    "incidence": {
+      "cases": 15921,
+      "person_years": 1890187,
+      "median_years": 9.8,
+      "iqr_years": [
+        9.4,
+        10.6
+      ]
+    },
+    "mortality": {
+      "deaths": 4009,
+      "person_years": 1958878,
+      "median_years": 9.8,
+      "iqr_years": [
+        9.5,
+        10.7
+      ]
+    }
+  },
+  "ascertainment": {
+    "incident_cases": "linkage to national cancer and mortality registries",
+    "cancer_registry_available_until": {
+      "England_and_Wales": "2019-07-31",
+      "Scotland": "2015-10-31"
+    },
+    "mortality_registry_available_until": "2021-01-31",
+    "cancer_death_definition": "primary/underlying cause",
+    "overall_cancer_icd10": "C00-C97 excluding C44",
+    "censoring_as_reported": "cancer incidence/mortality, non-cancer death, loss to follow-up, or study end, whichever first"
+  },
+  "model": {
+    "type": "Cox proportional hazards",
+    "final_model": 4,
+    "time_scale": "age",
+    "adjustment": [
+      "ethnicity",
+      "smoking status",
+      "physical activity",
+      "household income",
+      "education",
+      "alcohol intake",
+      "BMI category",
+      "total daily energy intake"
+    ],
+    "strata_general_models": [
+      "sex",
+      "height",
+      "family history of cancer",
+      "Index of Multiple Deprivation quintile",
+      "geographical region"
+    ],
+    "additional_female_adjustments": [
+      "baseline menopause status",
+      "oral contraceptive use",
+      "hormone replacement therapy use",
+      "parity"
+    ],
+    "missing_covariates": "multiple imputation by chained equations: 10 imputed datasets; Rubin rules"
+  },
+  "integration_notes": [
+    "Do not reconstruct exact ovarian person-years by dividing counts by rounded rates.",
+    "Do not apply all-cohort person-years to ovarian counts.",
+    "HR is not an absolute risk or a causal estimate.",
+    "The 143 ovarian deaths are not a denominator-restricted case-fatality analysis among the 291 incident cases.",
+    "PNS consumption of >=5 UPF groups is a different exposure from dietary weight percentage; do not convert the UK Biobank HR into a PNS personal or population risk score."
+  ],
+  "audit": {
+    "xml": "docs/source_snapshots/ukbiobank/chang_2023_fulltext.xml",
+    "supplement_pdf": "docs/source_snapshots/ukbiobank/chang_2023_supplement.pdf",
+    "supplement_text": "docs/source_snapshots/ukbiobank/chang_2023_supplement.txt",
+    "supplement_sha256": "d7ef61cbeb2f57de2f447860d31c7ccf3ffbc29b9e7b530f4bea14c3c03f70ad",
+    "download_fulltext": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9985039/fullTextXML",
+    "download_supplements": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9985039/supplementaryFiles",
+    "article_license": "CC BY 4.0",
+    "xml_sha256": "7dcfd98b59274a16ffdb8f0cb60dfda7b25b694566d52cb698933da42f0ad167"
+  },
+  "schemaVersion": "ukbiobank-1.0",
+  "reviewed_at": "2026-10-18",
+  "isSynthetic": false,
+  "data_type": "published_aggregate_evidence",
+  "geographical_scope": "UK Biobank: Inglaterra, País de Gales e Escócia",
+  "europe_scope_note": "Coorte do Reino Unido; não representa toda a Europa e não é um estudo de população brasileira.",
+  "effects": [
+    {
+      "id": "ovarian_incidence",
+      "title": "Incidência de câncer de ovário",
+      "label": "Incidência de câncer de ovário",
+      "endpoint": "incidence",
+      "effect_measure": "HR ajustado",
+      "effect": 1.19,
+      "hr": 1.19,
+      "low": 1.08,
+      "high": 1.3,
+      "events": 291,
+      "event_unit": "casos incidentes",
+      "n": 107919,
+      "year": 2023,
+      "comparison": "Aumento de 10 pontos percentuais da participação dos ultraprocessados no peso total da dieta, incluindo bebidas",
+      "source_table": "Tabela 2",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9985039/"
+    },
+    {
+      "id": "ovarian_mortality",
+      "title": "Mortalidade por câncer de ovário",
+      "label": "Mortalidade por câncer de ovário",
+      "endpoint": "mortality",
+      "effect_measure": "HR ajustado",
+      "effect": 1.3,
+      "hr": 1.3,
+      "low": 1.13,
+      "high": 1.5,
+      "events": 143,
+      "event_unit": "óbitos por causa básica",
+      "n": 107919,
+      "year": 2023,
+      "comparison": "Aumento de 10 pontos percentuais da participação dos ultraprocessados no peso total da dieta, incluindo bebidas",
+      "source_table": "Tabela 3",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9985039/"
+    }
+  ],
+  "quartiles": {
+    "definition": "Quartis publicados da participação percentual dos ultraprocessados no peso da dieta. Não são categorias criadas pelo painel.",
+    "profile_population": "Todas as 197.426 pessoas da coorte, mulheres e homens; os perfis alimentares, de escolaridade e de IMC não são específicos de mulheres com câncer.",
+    "ovarian_model_population": "107.919 mulheres, com ajuste pelas covariáveis descritas no estudo.",
+    "source_table_profiles": "Tabela 1",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9985039/",
+    "values_note": "Médias, desvios-padrão, contagens e percentuais são os publicados. SD descreve dispersão, não IC95%. Os limites de quartis são exibidos na precisão publicada, sem reclassificar microdados.",
+    "rows": [
+      {
+        "id": "Q1",
+        "label": "Q1 · menor consumo",
+        "range_weight_pct": [
+          0,
+          13.4
+        ],
+        "range_published": "0%–13,4%",
+        "n_all_participants": 49357,
+        "n_female": 28272,
+        "upf_weight_mean_pct": 9.2,
+        "upf_weight_sd_pct": 3.0,
+        "fruit_mean_g_day": 255.0,
+        "fruit_sd_g_day": 194.5,
+        "vegetables_mean_g_day": 211.8,
+        "vegetables_sd_g_day": 173.0,
+        "university_degree_n": 25215,
+        "university_degree_published_pct": 51.0,
+        "bmi_ge30_n": 7832,
+        "bmi_ge30_published_pct": 15.8,
+        "ovarian_incidence": {
+          "hr": 1,
+          "low": null,
+          "high": null,
+          "reference": true,
+          "n_models": 107919,
+          "source_table": "Tabela 2"
+        },
+        "ovarian_mortality": {
+          "hr": 1,
+          "low": null,
+          "high": null,
+          "reference": true,
+          "n_models": 107919,
+          "source_table": "Tabela 3"
+        }
+      },
+      {
+        "id": "Q2",
+        "label": "Q2",
+        "range_weight_pct": [
+          13.5,
+          20.0
+        ],
+        "range_published": "13,5%–20,0%",
+        "n_all_participants": 49356,
+        "n_female": 27358,
+        "upf_weight_mean_pct": 16.7,
+        "upf_weight_sd_pct": 1.9,
+        "fruit_mean_g_day": 227.9,
+        "fruit_sd_g_day": 169.0,
+        "vegetables_mean_g_day": 185.2,
+        "vegetables_sd_g_day": 144.9,
+        "university_degree_n": 22982,
+        "university_degree_published_pct": 46.5,
+        "bmi_ge30_n": 8597,
+        "bmi_ge30_published_pct": 17.4,
+        "ovarian_incidence": {
+          "hr": 0.96,
+          "low": 0.65,
+          "high": 1.41,
+          "reference": false,
+          "n_models": 107919,
+          "source_table": "Tabela 2"
+        },
+        "ovarian_mortality": {
+          "hr": 0.82,
+          "low": 0.45,
+          "high": 1.49,
+          "reference": false,
+          "n_models": 107919,
+          "source_table": "Tabela 3"
+        }
+      },
+      {
+        "id": "Q3",
+        "label": "Q3",
+        "range_weight_pct": [
+          20.1,
+          29.4
+        ],
+        "range_published": "20,1%–29,4%",
+        "n_all_participants": 49357,
+        "n_female": 26377,
+        "upf_weight_mean_pct": 24.3,
+        "upf_weight_sd_pct": 2.6,
+        "fruit_mean_g_day": 208.3,
+        "fruit_sd_g_day": 160.9,
+        "vegetables_mean_g_day": 166.7,
+        "vegetables_sd_g_day": 137.8,
+        "university_degree_n": 20523,
+        "university_degree_published_pct": 41.5,
+        "bmi_ge30_n": 10411,
+        "bmi_ge30_published_pct": 21.0,
+        "ovarian_incidence": {
+          "hr": 1.15,
+          "low": 0.78,
+          "high": 1.69,
+          "reference": false,
+          "n_models": 107919,
+          "source_table": "Tabela 2"
+        },
+        "ovarian_mortality": {
+          "hr": 1.56,
+          "low": 0.89,
+          "high": 2.73,
+          "reference": false,
+          "n_models": 107919,
+          "source_table": "Tabela 3"
+        }
+      },
+      {
+        "id": "Q4",
+        "label": "Q4 · maior consumo",
+        "range_weight_pct": [
+          29.5,
+          100.0
+        ],
+        "range_published": "29,5%–100%",
+        "n_all_participants": 49356,
+        "n_female": 25912,
+        "upf_weight_mean_pct": 41.4,
+        "upf_weight_sd_pct": 11.1,
+        "fruit_mean_g_day": 175.7,
+        "fruit_sd_g_day": 159.6,
+        "vegetables_mean_g_day": 132.6,
+        "vegetables_sd_g_day": 129.0,
+        "university_degree_n": 16931,
+        "university_degree_published_pct": 34.3,
+        "bmi_ge30_n": 14670,
+        "bmi_ge30_published_pct": 29.7,
+        "ovarian_incidence": {
+          "hr": 1.45,
+          "low": 0.98,
+          "high": 2.15,
+          "reference": false,
+          "n_models": 107919,
+          "source_table": "Tabela 2"
+        },
+        "ovarian_mortality": {
+          "hr": 1.91,
+          "low": 1.08,
+          "high": 3.39,
+          "reference": false,
+          "n_models": 107919,
+          "source_table": "Tabela 3"
+        }
+      }
+    ]
+  },
+  "brazil_comparison": {
+    "title": "Reino Unido e Brasil: perguntas complementares",
+    "uk": {
+      "source": "Chang et al. 2023, UK Biobank",
+      "design": "Coorte prospectiva observacional",
+      "population": "Mulheres do UK Biobank nos modelos de ovário; recrutamento geral aos 40–69 anos",
+      "exposure": "Percentual do peso da dieta proveniente de ultraprocessados",
+      "diet_period": "2009–2012",
+      "outcome": "Novos registros de câncer e óbitos durante o seguimento",
+      "measure": "HR ajustado por 10 pontos percentuais da exposição"
+    },
+    "brazil": {
+      "source": "IBGE, PNS 2019; processamento Marie Câncer de Ovário",
+      "design": "Inquérito transversal com desenho amostral complexo",
+      "population": "Mulheres de 18 anos ou mais",
+      "exposure": "Cinco ou mais dos dez grupos de ultraprocessados consumidos no dia anterior",
+      "diet_period": "2019",
+      "outcome": "Relato de diagnóstico médico de câncer de ovário atual ou passado",
+      "measure": "Proporção ponderada e IC95%; estratos por UF, idade, renda, escolaridade e raça/cor"
+    },
+    "linkage": "Não há ligação individual entre o UK Biobank e a PNS neste projeto.",
+    "interpretation": "A PNS permite localizar perfis e desigualdades brasileiras; o estudo britânico acrescenta uma associação prospectiva externa. Não se harmonizou exposição nem se recalibrou um modelo de risco para o Brasil.",
+    "brazil_filters_apply_to_uk": false,
+    "allowed_analysis": [
+      "Exibir os resultados britânicos com a população e a exposição originais.",
+      "Explorar no módulo brasileiro como a frequência do marcador alimentar varia entre estratos.",
+      "Comparar perguntas, desenhos e limitações de forma qualitativa."
+    ],
+    "not_calculated": [
+      "Risco absoluto individual de câncer.",
+      "Casos brasileiros atribuíveis ou evitáveis aplicando o HR britânico.",
+      "Probabilidade de câncer em cada UF ou estrato da PNS.",
+      "Conversão de cinco grupos alimentares em percentual do peso da dieta."
+    ]
+  },
+  "ui_notes": [
+    "Mostrar HR e IC95%, mantendo a comparação principal por incremento de 10 pontos percentuais.",
+    "Os quatro quartis vêm do artigo. Não criar cinco classes alimentares ou coordenadas de supostos participantes.",
+    "Os perfis da Tabela 1 incluem homens e mulheres; os modelos de ovário usam somente mulheres.",
+    "No contraste Q4 versus Q1, o IC95% da incidência inclui 1,00; esse contraste é diferente da análise contínua principal.",
+    "A análise britânica não muda quando se seleciona UF, idade, renda ou coorte da PNS."
+  ]
+}
