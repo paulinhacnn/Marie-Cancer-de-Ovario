@@ -1,0 +1,58 @@
+[
+  {
+    "source_url": "https://bv.fapesp.br/pt/auxilios/119846/marieai-plataforma-multimodal-de-saude-da-mulher/",
+    "retrieved_at": "2026-10-18",
+    "http_status": 200,
+    "snapshot": "docs/source_snapshots/fapesp/auxilio_25_14126_3.html",
+    "sha256": "8ce1d7e05122facaad1677adc2db5837a174ffbb5aa20749ed1febc1fe740cab",
+    "bytes": 68702
+  },
+  {
+    "source_url": "https://bv.fapesp.br/pt/auxilios/113956/marieia-plataforma-para-rastreamento-de-neoplasias-ovarianas/",
+    "retrieved_at": "2026-10-18",
+    "http_status": 200,
+    "snapshot": "docs/source_snapshots/fapesp/auxilio_23_13767_0.html",
+    "sha256": "5c9b09bdd50a199bc33f3f5b5362d14e257981c13869d73c8e7885b346d9fd80",
+    "bytes": 67682
+  },
+  {
+    "source_url": "https://bv.fapesp.br/pt/bolsas/244894/reconstrucao-de-padroes-clinico-biologicos-com-ia-para-reducao-de-desigualdades-no-diagnostico-ginec/",
+    "retrieved_at": "2026-10-18",
+    "http_status": 200,
+    "snapshot": "docs/source_snapshots/fapesp/bolsa_26_21806_3.html",
+    "sha256": "10517eaf8e6e580b543b839ef2d046093babf2c36dc6cc50889ffeec1876f3a3",
+    "bytes": 59567
+  },
+  {
+    "source_url": "https://bv.fapesp.br/pt/bolsas/240055/integracao-de-grafos-fisiologicos-ao-mdl-vae-no-diagnostico-de-doencas-ginecologicas-sindrome-do-ova/",
+    "retrieved_at": "2026-10-18",
+    "http_status": 200,
+    "snapshot": "docs/source_snapshots/fapesp/bolsa_26_04565_2.html",
+    "sha256": "14ed7746ec6a5c55091672dc1c749a32576da04e40b778b56230a4fc359076ef",
+    "bytes": 59769
+  },
+  {
+    "source_url": "https://bv.fapesp.br/pt/bolsas/238484/marieai-plataforma-multimodal-de-saude-da-mulher/",
+    "retrieved_at": "2026-10-18",
+    "http_status": 200,
+    "snapshot": "docs/source_snapshots/fapesp/bolsa_26_04434_5.html",
+    "sha256": "108a1d351060b42eff815e6d76a6f7e8d2f10e86607087193ffd9ab29b1a0663",
+    "bytes": 60040
+  },
+  {
+    "source_url": "https://bv.fapesp.br/pt/bolsas/238483/mapeamento-de-vias-de-sinalizacao-a-partir-de-sintomas-e-hemogramas-com-apoio-de-mdl-vae/",
+    "retrieved_at": "2026-10-18",
+    "http_status": 200,
+    "snapshot": "docs/source_snapshots/fapesp/bolsa_26_04531_0.html",
+    "sha256": "d16ff13b3e71390cc994dceef061be40e0fc41df6c4561e68f10ed0b50e96b65",
+    "bytes": 59941
+  },
+  {
+    "source_url": "https://bv.fapesp.br/pt/bolsas/238482/reconstrucao-multimodal-de-achados-tomograficos-no-abdomen-inferior-para-treinamento-e-aprimoramento/",
+    "retrieved_at": "2026-10-18",
+    "http_status": 200,
+    "snapshot": "docs/source_snapshots/fapesp/bolsa_26_04794_1.html",
+    "sha256": "7ca77eaddb41295e7e3f1b0aaf7c9c1fe77579976e92f71d6ea193c71101175d",
+    "bytes": 60175
+  }
+]

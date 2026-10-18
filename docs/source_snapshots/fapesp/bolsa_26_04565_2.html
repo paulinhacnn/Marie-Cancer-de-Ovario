@@ -1,0 +1,611 @@
+﻿
+
+
+
+
+<!DOCTYPE html><html lang="pt"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="google-site-verification" content="oUtaDCwRcZKRyVnk3RB4zu5TZwOC7HomuzODb-Gz4EI" /><!-- Facebook Twiter tags --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@BVFAPESP"><meta name="twitter:title" content="None"><meta property="og:image" content="https://bv.fapesp.br/static-files/portal/images/facelogo-min.jpg"><meta property="og:image:type" content="image/jpeg" /><meta name="twitter:image" content="https://bv.fapesp.br/static-files/portal/images/twiter_logo-min.jpg"><meta property="og:url" content="https://bv.fapesp.br/pt/bolsas/240055/integracao-de-grafos-fisiologicos-ao-mdl-vae-no-diagnostico-de-doencas-ginecologicas-sindrome-do-ova/"><meta property="og:title" content="Bolsa 26/04565-2 - Neoplasias ovarianas, Epidemiologia - BV FAPESP"><meta property="og:description" content="Integração de grafos fisiológicos ao MDL-VAE no Diagnóstico de Doenças Ginecológicas - Síndrome do ovário policístico, mioma, endometriose e câncer de ovário.. Bolsas no Brasil Programa Capacitação Treinamento Técnico. Alef Janguas da Costa. Interdisciplinar. bolsa de estudo"><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta name="language" content="pt"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="theme-color" content="#2e4d85"/><meta name="msvalidate.01" content="414050733D42E1BF5E3AA7B97CB65CE8" /><meta name="ROBOTS" content="NOODP"><meta name="Author" content="FAPESP"><meta name="publisher" content="FAPESP"><link rel="profile" href="https://bv.fapesp.br/"><title>Bolsa 26/04565-2 - Neoplasias ovarianas, Epidemiologia - BV FAPESP</title><meta name="description" content="Integração de grafos fisiológicos ao MDL-VAE no Diagnóstico de Doenças Ginecológicas - Síndrome do ovário policístico, mioma, endometriose e câncer de ovário.. Bolsas no Brasil Programa Capacitação Treinamento Técnico. Alef Janguas da Costa. Interdisciplinar. bolsa de estudo"/><meta name="keywords" content="Biomarcadores, Contagem de células sanguíneas, Epidemiologia, Inteligência artificial, Testes hematológicos, Neoplasias ovarianas, Plataforma (computação), Ultrassom"/><script type="application/ld+json">
+         
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Biblioteca Virtual da Fapesp",
+          "url": "https://bv.fapesp.br",
+          "logo": "https://bv.fapesp.br/static-files/portal/images/2024_logoBV.jpg"
+        }
+        </script><script type="application/ld+json">
+            {
+             "@context": "http://schema.org",
+              "@type": "WebSite",
+              "url": "https://bv.fapesp.br",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://bv.fapesp.br/pt/metapesquisa/?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }
+        </script><script>
+        window.CookieBannerConfig = {
+            cookieName: 'portal_cookie_consent',
+            cookieDays: 365,
+            
+            message: 'Utilizamos cookies para melhorar sua experiência de navegação e analisar como você interage em nosso site.',
+            moreInfoText: 'Para mais informações consulte a',
+            policyText: 'Política de Privacidade da FAPESP',
+            acceptText: 'Estou ciente',
+            
+            policyUrl: 'https://www.fapesp.br/politicas/privacidadeatividadefim',
+            showCloseButton: true
+        };
+        </script><!-- css --><link href="/static-files/favicon.ico" rel="shortcut icon"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400..900&display=swap" rel="stylesheet"><link rel="stylesheet" href="/static-files/CACHE/css/part1.90403e170000.css" type="text/css" media="all"><link rel="stylesheet" href="/static-files/CACHE/css/part2.2c480ec90684.css" type="text/css" media="all"><link rel="stylesheet" href="/static-files/CACHE/css/part2.341267c0784a.css" type="text/css"><link rel="stylesheet" href="/static-files/CACHE/css/part2.5a0f84ed3ee3.css" type="text/css" media="print"><link rel="stylesheet" href="/static-files/CACHE/css/part2.092d87e23b57.css" type="text/css"><script src="/static-files/CACHE/js/output.0efb16743f02.js"></script><script src="/static-files/CACHE/js/output.0d5a0ea2607d.js" async></script><script src="/static-files/CACHE/js/output.bebe218d3635.js"></script><script src="/static-files/CACHE/js/output.a7e4b3cedac9.js" async></script><script>
+          var bsModal = $.fn.modal.noConflict();
+        </script><script>
+
+        $(document).ready(function() {
+            var agencia_url = "https://bv.fapesp.br/agenciabv/bv-links/bolsas/240055";
+            var sigla_idioma = "pt"
+            $.ajax({
+                contentType: 'text/plain; charset=utf-8',
+                dataType: 'json',
+                url: agencia_url,
+                type: 'GET',
+                success: function(data){
+                    preenche_materias_agencia(sigla_idioma, data);
+                },
+                error: function (event, jqxhr, settings){
+                    $('#agencia_table').remove();
+                }
+            });
+
+            var namidia_url = "https://namidiabv.fapesp.br/api/number-process/26045652";
+            $.ajax({
+                contentType: 'text/plain; charset=utf-8',
+                dataType: 'json',
+                url: namidia_url,
+                type: 'GET',
+                success: function(data){
+                    preenche_materias_namidia(sigla_idioma, data);
+                    $('#collapse_namidia').hide();
+                    $('.materia_namidia').hide();
+                },
+                error: function(data){
+                    $('#namidia_table').remove();
+                }
+            });
+
+        });
+
+    </script><style media="screen">
+          ul.errorlist {
+            color: #ffeb3b;
+            font-size: 12px;
+            margin-top: 10px;
+          }
+        </style><style media="screen">
+          a.anchor {
+              display: block;
+              position: relative;
+              top: -150px;
+              visibility: hidden;
+          }
+        </style><style>
+          #modal_ultimas_buscas {
+            padding: 5px;
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width:65%;
+            background: white;
+            display:None;
+          }
+
+          /* Modal Content/Box */
+          .span_ultimas_buscas {
+            display:block;
+            min-width:100px;
+            padding:3px
+          }
+          #modal_ultimas_buscas:hover .span_ultimas_buscas:hover {
+              background-color: #F5F5F5;
+          }
+        </style><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-QXZ7YMGCPB"></script><script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QXZ7YMGCPB');
+      </script><script type="text/javascript">(function(){ if (typeof(___zen) === "undefined") {setTimeout(arguments.callee, 50); return; }___zen.hic("__ZEHIC9149", 1792317146, 3, 30, 300); })()</script><script type="text/javascript" async="async" src="/__zenedge/assets/hic.js?v=1674207422"></script></head><body class="pt"><script type="text/javascript">
+              function get_field_selected() {
+                  var field = $('#campo_de_busca select').val()//.trim().replace(/ /g, '_');
+                  return field.normalize('NFD').replace(/[\u0300-\u036f\u00b4\u0060\u005e\u007e\u00a8()]/g, '').toLowerCase();
+              }
+              $(function() {
+                    // Autocomplete com as categorias da BV
+                    $("#q").catcomplete({
+                      delay: 500,
+                      minLength: 0,
+                      source: function(request, response) {
+                        const fieldSelected = get_field_selected()
+                        const url = "/pt/pesquisa/search-bar-suggestion/"
+                          $.getJSON(url, {
+                          term: request.term,          
+                          category: fieldSelected
+                          }, response);
+                        },
+                        position: {
+                                my : "left top",
+                                at: "left bottom"
+                            }
+                    });
+                  });
+        </script><div id="basic-modal-link-content" style="display: none;" class='hidden-print'><div class="bContent"><a href="#" class="simplemodal-close">X</a><h4 class="simplemodal-text">URL curto</h4><div class="campo"><input type="text" onclick="this.select();" id="link_curto" name="link_curto" value=""><div class="clear"></div></div></div></div><header id="header" class="hidden-print bv_header"><div id="submenu" class="hidden-print"><div class="wrap"><a id="basic-modal-link" href="javascript:void(0);"  class="url_curto" title="URL curto">URL curto</a><a href="javascript:void(0);" class="url_curto" > | </a><a href="/pt/area_usuario/historico_pesquisa/" class="url_curto" title="Histórico de buscas">Histórico de buscas</a><ul class="lang"><li class="active"><a href="/pt/bolsas/240055/integracao-de-grafos-fisiologicos-ao-mdl-vae-no-diagnostico-de-doencas-ginecologicas-sindrome-do-ova/">PT</a></li><li class=""><a href="/en/bolsas/240055/integration-of-physiological-graphs-into-mdl-vae-for-the-diagnosis-of-gynecological-diseases-polycys/">EN</a></li></ul></div></div><div id="ajuda" onclick="toggle_help_button(this)"><div class="toggle"><i class="fa fa-question"></i><i class="fa fa-close"></i></div><div class="container"><div class="bootstrap-isolate"><a class="btn btn-outline-light btn-lg btn-block" href="/pt/faq">
+                          Acesse nosso FAQ
+                        </a></div><br><div class="bootstrap-isolate"><a class="btn btn-outline-light btn-lg btn-block" href="/pt/480/guia-de-utilizacao-da-biblioteca-virtual/">
+                          Guia de Utilização
+                        </a></div><br><div class="bootstrap-isolate"><a class="btn btn-outline-light btn-lg btn-block" href="https://fapesp.br/converse/informacoes/centro-de-documentacao-e-informacao-biblioteca-virtual">
+                          Envie sua mensagem
+                        </a></div><br></div></div><div id="share_button"><div class="container"><!-- AddToAny BEGIN --><div class="a2a_kit a2a_kit_size_32 a2a_default_style bv-share-options"><a class="a2a_button_email"></a><a class="a2a_button_whatsapp"></a><a class="a2a_button_linkedin"></a><a class="a2a_button_x"></a><a class="a2a_button_facebook"></a></div><script>
+                                      var lang = "pt";
+                                      if (lang === 'pt') {
+                                        var a2a_config = a2a_config || {};
+                                        a2a_config.locale = "pt-BR";
+                                      }
+                                    </script><script defer src="https://static.addtoany.com/menu/page.js"></script><!-- AddToAny END --></div></div><div id="middle"><div class="wrap"><a class="fapesp" href="https://fapesp.br/"><h2>FAPESP</h2></a><a class="bv-cdi" href="/pt/">bv-fapesp</a><span class="bv_h1"><strong class="bv_strong">Biblioteca Virtual da FAPESP</strong>
+                          Fonte referencial de informação para a Pesquisa Apoiada pela FAPESP
+                      </span></div></div><div id="navbar_bkg" style="background-color:#2e4d85"><div class="wrap"><div class="bootstrap-iso-3_4"><nav class="navbar navbar-expand-lg navbar-light bg-transparent"><nav class="navbar navbar-default" role="navigation"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarNavDropdown"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div id="busca_is_mobile"></div></div><!--/.navbar-header--><a id="logo_brand" class="navbar-brand " style="display:none; padding: 8px 10px 0px 5px" href="#"><img src="/static-files/portal/images/2024_logoBV.jpg" width="130" height="42" alt=""></a><div class=" navbar-collapse collapse" style="display:None" id="navbarNavDropdown"><ul class="nav navbar-nav"><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Fomento à</b><br> Pesquisa</a><ul class="dropdown-menu multi-column columns-2"><div class="row"><div class="col-sm-6"><ul class="multi-column-dropdown"><li>Bolsas</li><li class="divider"></li><li><a class="link-color" href="/pt/214/bolsas-no-brasil-iniciacao-cientifica/">Iniciação Científica</a></li><li><a class="link-color" href="/pt/215/bolsas-no-brasil-mestrado/">Mestrado</a></li><li><a class="link-color" href="/pt/212/bolsas-no-brasil-doutorado/">Doutorado</a></li><li><a class="link-color" href="/pt/213/bolsas-no-brasil-doutorado-direto/">Doutorado Direto</a></li><li><a class="link-color" href="/pt/216/bolsas-no-brasil-pos-doutorado/">Pós-Doutorado</a></li><li><a class="link-color" href="/pt/221/bolsas-no-exterior-estagio-de-pesquisa/">Estágio de Pesquisa no Exterior (BEPE)</a></li><li><a class="link-color" href="/pt/220/bolsas-no-exterior-pesquisa/">Pesquisa no Exterior (BPE)</a></li><li><a class="link-color" href="/pt/22/ensino-publico/">Ensino Público</a></li><li><a class="link-color" href="/pt/347/programa-capacitacao-treinamento-tecnico/">Treinamento Técnico</a></li><li><a class="link-color" href="/pt/540/">+ Veja mais</a></li></ul></div><div class="col-sm-6"><ul class="multi-column-dropdown"><li>Auxílios</li><li class="divider"></li><li><a class="link-color" href="/pt/6/auxilios-regulares/">Regular</a></li><li><a class="link-color" href="/pt/1/auxilios-tematicos/">Projeto Temático</a></li><li><a class="link-color" href="/pt/2/jovens-pesquisadores-em-centros-emergentes-jp-fapesp/">Jovens Pesquisadores</a></li><li><a class="link-color" href="/pt/265/auxilio-pesquisador-visitante/">Pesquisador Visitante</a></li><li><a class="link-color" href="/pt/185/organizacao-de-reuniao-cientifica/">Organização de Reunião Científica</a></li><li><a class="link-color" href="/pt/539/">+ Veja mais</a></li></ul><ul class="multi-column-dropdown"><li class="space"></li><li>Programas</li><li class="divider"></li><li><a class="link-color" href="/pt/16/pesquisa-em-bioenergia-bioen/">BIOEN</a></li><li><a class="link-color" href="/pt/17/pesquisa-em-biodiversidade-biota/">BIOTA</a></li><li><a class="link-color" href="/pt/402/pesquisa-em-escience-e-data-science/">ESCIENCE</a></li><li><a class="link-color" href="/pt/40/mudancas-climaticas-globais/">Mudanças Climáticas</a></li><li><a class="link-color" href="/pt/675/programas/">+ Veja mais</a></li></ul></div></div></ul></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Pesquisa para</b><br> Inovação</a><ul class="dropdown-menu"><li>Programas</li><li class="divider"></li><li><a class="link-color" href="/pt/604/centros-de-pesquisa-aplicada-cpa/">Centros de Pesquisa Aplicada (CPA)</a></li><li><a class="link-color" href="/pt/8/centros-de-pesquisa-inovacao-e-difusao-cepid/">Centros de Pesquisa, Inovação e Difusão (CEPID)</a></li><li><a class="link-color" href="/pt/266/pesquisa-inovativa-em-pequenas-empresas-pipe/">Pesquisa Inovativa em Pequenas Empresas (PIPE)</a></li><li><a class="link-color" href="/pt/4/pesquisa-em-parceria-para-inovacao-tecnologica-pite/">Pesquisa em Parceria para Inovação Tecnológica (PITE)</a></li></ul></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Difusão do</b><br>Conhecimento</a><ul class="dropdown-menu"><li>Impacto da Pesquisa na Sociedade</li><li class="divider"></li><li><a class="link-color" href="https://agencia.fapesp.br/">Agência FAPESP</a></li><li><a class="link-color" href="https://cienciaaberta.fapesp.br/">Ciência Aberta</a></li><li><a class="link-color" href="https://www.youtube.com/playlist?list=PLPdNbZy8nSthxPuBXifoSDlFOTmT4Ja5w">Ciência SP</a></li><li><a class="link-color" href="https://covid19.fapesp.br/">COVID-19</a></li><li><a class="link-color" href="http://bv.fapesp.br/pt/eventos/">Eventos com Participação da FAPESP</a></li><li><a class="link-color" href="https://namidia.fapesp.br/">FAPESP na Mídia</a></li><li><a class="link-color" href="https://fapesp.br/6222">Imprensa</a></li><li><a class="link-color" href="https://fapesp.br/publicacoes">Publicações e Exposições</a></li><li><a class="link-color" href="http://pesquisaparainovacao.fapesp.br/">Pesquisa para Inovação</a></li><li><a class="link-color" href="https://revistapesquisa.fapesp.br/">Revista Pesquisa FAPESP</a></li></ul></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Acordos e</b><br>Convênios</a><ul class="dropdown-menu multi-column"><div class="row"><div class="col-sm-6"><ul class="multi-column-dropdown"><li>Agências e orgãos financiadores de pesquisa</li><li class="divider"></li><li><a class="link-color" href="/pt/138/centre-national-de-la-recherche-scientifique-cnrs/">Centre National de la Recherche Scientifique (CNRS)</a></li><li><a class="link-color" href="/pt/178/conselho-nacional-de-desenvolvimento-cientifico-e-tecnologico-cnpq/">Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)</a></li><li><a class="link-color" href="/pt/141/uk-research-and-innovation-ukri/?selected_facets=tipo_convenio_exact%3AAg%C3%AAncias+e+%C3%B3rg%C3%A3os+financiadores+de+pesquisa">UK Research and Innovation (UKRI)</a></li><li><a class="link-color" href="/pt/acordo_convenio/?agreement_type=Ag%C3%AAncias%20e%20%C3%B3rg%C3%A3os%20financiadores%20de%20pesquisa&amp;sort_type=index&amp;group_by=entity_type">+ Veja mais</a></li></ul><ul class="multi-column-dropdown"><li class="space"></li><li>Empresas</li><li class="divider"></li><li><a class="link-color" href="/pt/168/companhia-de-saneamento-basico-do-estado-de-sao-paulo-sabesp/">Companhia de Saneamento Básico do Estado de São Paulo (SABESP)</a></li><li><a class="link-color" href="/pt/239/glaxosmithkline/?selected_facets=tipo_convenio_exact%3AEmpresas">GlaxoSmithKline</a></li><li><a class="link-color" href="/pt/172/microsoft-research/">Microsoft Research</a></li><li><a class="link-color" href="/pt/acordo_convenio/?agreement_type=Empresas&amp;sort_type=index&amp;group_by=entity_type">+ Veja mais</a></li></ul><ul class="multi-column-dropdown"><li class="space"></li><li>Instituições de ensino superior e de pesquisa</li><li class="divider"></li><li><a class="link-color" href="/pt/247/consorcio-de-alberta-laval-dalhousie-e-ottawa-caldo/">Consorcio de Alberta, Laval, Dalhousie e Ottawa (CALDO)</a></li><li><a class="link-color" href="/pt/338/imperial-college-reino-unido/?selected_facets=tipo_convenio_exact%3AInstitui%C3%A7%C3%B5es+de+ensino+superior+e+de+pesquisa">Imperial College, Reino Unido</a></li><li><a class="link-color" href="/pt/576/texas-a-m-university/?selected_facets=tipo_convenio_exact%3AInstitui%C3%A7%C3%B5es+de+ensino+superior+e+de+pesquisa">Texas A&amp;M University</a></li><li><a class="link-color" href="/pt/acordo_convenio/?agreement_type=Institui%C3%A7%C3%B5es%20de%20ensino%20superior%20e%20de%20pesquisa&amp;sort_type=index&amp;group_by=entity_type">+ Veja mais</a></li></ul></div><div class="col-sm-6"><ul class="multi-column-dropdown"><li>Associações</li><li class="divider"></li><li><a class="link-color" href="/pt/275/apae-sao-paulo/">APAE São Paulo</a></li><li><a class="link-color" href="/pt/496/fundacao-seade/">Fundação Seade</a></li><li><a class="link-color" href="/pt/471/instituto-de-estudos-de-saude-suplementar-iess/">Instituto de Estudos de Saúde Suplementar (IESS)</a></li><li><a class="link-color" href="/pt/acordo_convenio/?agreement_type=Associa%C3%A7%C3%B5es&amp;sort_type=index&amp;group_by=entity_type">+ Veja mais</a></li></ul><ul class="multi-column-dropdown"><li class="space"></li><li>Organizações multinacionais</li><li class="divider"></li><li><a class="link-color" href="/pt/332/belmont-forum/">Belmont Forum</a></li><li><a class="link-color" href="/pt/612/fundo-global-para-o-meio-ambiente-gef/">Fundo Global para o Meio Ambiente (GEF)</a></li><li><a class="link-color" href="/pt/475/uniao-europeia-horizonte-2020/">União Europeia (Horizonte 2020)</a></li><li><a class="link-color" href="/pt/acordo_convenio/?agreement_type=Organiza%C3%A7%C3%B5es%20multinacionais&amp;sort_type=index&amp;group_by=entity_type">+ Veja mais</a></li></ul><ul class="multi-column-dropdown"><li class="space"></li><li></li><li class="divider"></li><li class="space"></li><li><a class="link-color" href="/pt/acordo_convenio/"><b>Ver todos</b></a></li></ul></div></div></ul></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Sobre a </b><br>BV FAPESP</a><ul class="dropdown-menu multi-column"><div class="row"><div class="col-sm-6"><ul class="multi-column-dropdown"><li>Sobre a Biblioteca Virtual da FAPESP</li><li class="divider"></li><li><a class="link-color" href="/pt/76/a-biblioteca-virtual/">A Biblioteca Virtual</a></li><li><a class="link-color" href="/pt/445/quem-somos/">Quem Somos</a></li><li><a class="link-color" href="/pt/480/guia-de-utilizacao-da-biblioteca-virtual/">Guia de Utilização</a></li><li><a class="link-color" href="/pt/72/acordos-de-cooperacao/">Acordos de Cooperação</a></li><li><a class="link-color" href="/pt/74/terminologia-em-cti/">Terminologia em CT&amp;I</a></li><li><a class="link-color" href="/pt/71/comissao-consultiva/">Comissão Consultiva</a></li><li><a class="link-color" href="/pt/73/estatisticas/">Estatísticas</a></li></ul></div><div class="col-sm-6"><ul class="multi-column-dropdown"><li>Sobre a FAPESP</li><li class="divider"></li><li><a class="link-color" href="http://www.fapesp.br/28/criacao-e-estruturacao-da-fapesp">Criação e estruturação</a></li></ul></div></div></ul></li><li class="navbar-converse"><a href="https://fapesp.br/converse/informacoes/centro-de-documentacao-e-informacao-biblioteca-virtual" target="_blank" rel="noopener"><b>Converse com a  </b><br>FAPESP-BV</a></li></ul><a id="logo_brand" class="navbar-brand" style="display:none; padding-left:20px" href="#"><img src="/static-files/portal/images/fapesp.png" height="30" alt=""></a></div><!--/.navbar-collapse--></nav><!--/.navbar--></div></div></div><div id="busca_is_not_mobile"><div id="busca" class="hidden-print" style="display:None"><div class="wrap"><div id="pesquisa_input"><link rel="stylesheet" href="/static-files/CACHE/css/search_bar.a5ca1688a4a7.css" type="text/css"><script language="javascript" type="text/javascript" src="/static-files/portal/js/search_bar/filter_search_fields/filter_search_fields.js?v=1.0"></script><form action="/pt/metapesquisa/" method="get"><div class="table pa5 block-table"><div class="row"><!-- Campo de Busca --><div id="campo_de_busca" class="w25 campo_de_busca select_simple_search"><input type="hidden" name="field" id="hidden_field" value="todos"><div id="selected-option">Todos os campos</div><ul id="options-list" style="display: none;"><li data-value="area" data-descricao="<b>Área de conhecimento</b><br><i>Permite a busca dos projetos de pesquisa por áreas e subáreas do conhecimento, conforme a classificação da FAPESP.</i><br><br><b>Exemplo:</b><br>
+Biologia molecular
+">
+                                Área de Conhecimento
+                            </li><li data-value="assuntos" data-descricao="<b>Assunto</b><br><i>Permite a busca por assuntos atribuídos aos projetos de pesquisa.</i><br><br><b>Exemplo:</b><br>
+Mudança climática
+">
+                                Assunto
+                            </li><li data-value="empresa" data-descricao="<b>Empresa</b><br><i> Permite a busca pelo nome da empresa envolvida em projetos de pesquisa para inovação.</i><br><br><b>Exemplo:</b><br>
+Nanocore
+">
+                                Empresa
+                            </li><li data-value="instituicao" data-descricao="<b>Instituição</b><br><i>Permite a busca pelos nomes das instituições relacionadas ao projeto de pesquisa, como Instituição Sede, Instituição Parceira (nacional ou internacional), Instituição do Pesquisador Visitante, Instituição Anfitriã e Instituição Financiadora.</i><br><br><b>Exemplo:</b><br>
+Escola Paulista de Medicina<br>
+">
+                                Instituição
+                            </li><li data-value="numero_processo" data-descricao="<b>Número do Processo</b><br><i>Permite a busca pelo número de identificação único associado a cada projeto de pesquisa.</i><br><br><b>Exemplos:</b><br>
+2018/24561-5 ou 18/24561-5
+">
+                                Número do Processo
+                            </li><li data-value="pais_instituicao_t" data-descricao="<b>País (Instituição)</b><br><i>Permite a busca pelo nome do país de uma das instituições, nacionais ou internacionais, à quais os projetos de pesquisa estão vinculados.</i><br><br><b>Exemplo:</b><br>
+Alemanha
+">
+                                País (Instituição)
+                            </li><li data-value="pesquisadores" data-descricao="<b>Pesquisador</b><br><i>Permite a busca pelo nome de integrantes dos projetos de pesquisa, sejam beneficiários, pesquisadores responsáveis, principais, associados ou visitantes.</i><br><br><b>Exemplos:</b><br>
+Andreia da Silva<br>
+José Santos
+">
+                                Pesquisador
+                            </li><li data-value="resumo" data-descricao="<b>Resumo</b><br><i>Permite a busca por termos, expressões ou frases de interesse contidas nos resumos dos projetos de pesquisa.</i><br><br><b>Exemplo:</b><br>
+Conjunto de mediadores endógenos
+">
+                                Resumo
+                            </li><li data-value="fomento_t" data-descricao="<b>Tipo de Fomento</b><br><i>Permite a busca pelas diferentes linhas de fomento de Bolsas e Auxílios à Pesquisa oferecidas pela FAPESP.</i><br><br><b>Exemplo:</b><br>
+Jovens pesquisadores
+">
+                                Tipo de Fomento
+                            </li><li data-value="titulo_t" data-descricao="<b>Título</b><br><i>Permite a busca por termos, expressões ou frases presentes nos títulos dos projetos de pesquisa.</i><br><br><b>Exemplo:</b><br>
+Tecnologia para desenvolvimento de bioinsumos
+">
+                                Título
+                            </li><li data-value="todos_os_campos" data-descricao="<b>Todos os campos</b><br><i>Permite a busca em todos os campos disponíveis (área de conhecimento, assunto, empresa, instituição, linha de fomento, número do processo, país (instituição), pesquisador, resumo e título) a partir de uma única consulta.</i><br><br><b>Exemplo:</b><br>
+Genética
+">
+                                Todos os campos
+                            </li></ul></div><div id="descricao_campo"
+                style="display:none; position:absolute; left:250px; top:0; width:320px; background:#f9f9f9;
+                        border:2px solid #708090; border-radius:5px; padding:10px; font-size:13px;
+                        color:#333; box-shadow:0 3px 8px rgba(0,0,0,0.2); z-index:100;"></div><!-- Barra de Busca --><div id="barra_de_busca" class="w50"><div style="position:relative"><input name="q" id="q" style="border:2px solid #708090;" 
+                           placeholder="Digite os termos entre aspas para busca exata e selecione um campo ao lado"
+                    /><div style="position:relative"><button id="form_btn" aria-label="Search button"><!-- style="top:-30px"> --><span class="fa fa-search"></span></button></div><!-- position:relative --></div><!-- if position:relative  --></div><!-- w66 --><!-- Busca Avançada --><div id="botao_busca_avancada" class="w25"><div id="pesquisa_avancada"><span class="link-color" id="busca-avancada-control" onclick="openBuscaAvancada();" >
+                        Busca avançada
+                    </span></div><!-- pesquisa_avançada --></div><!-- w33 --></div><!-- row -- ></div><!-- table --></form></div></div></div></div></header><div class="wrap"><div id="conteudo"><div class="wrap"><section class="box collapse active busca-avancada"><header class="bv_header"><div class="table padding-table pa5 block-table"><div class="row"><div class="w90"><span class="bv_header-titulo1">Busca avançada</span></div><div id="pesquisa_avancada_2" class="w10"><i class="fa fa-times fa_angle_Style" onclick="closeBuscaAvancada();" style="float:right;"></i></div></div></div></header><div class="content"><form method="get" action="/pt/pesquisa/avancada"><div class="input"><div class="w75"><label><b>Pesquisar</b>   - Utilize aspas para obter um resultado mais específico
+            <input type="text" value="" name="q0" size="50"></label></div><div class="w25"><label><b>Índice</b><select name="field0" id="field0"><option value="">Todos os campos</option><option value="area">
+                    Área de Conhecimento
+                </option><option value="assuntos">
+                    Assunto
+                </option><option value="convenio">
+                    Convênio
+                </option><option value="empresa">
+                    Empresa
+                </option><option value="instituicao">
+                    Instituição
+                </option><option value="numero_processo">
+                    Número do Processo
+                </option><option value="pais_instituicao_t">
+                    País (Instituição)
+                </option><option value="pesquisadores">
+                    Pesquisador
+                </option><option value="resumo">
+                    Resumo
+                </option><option value="fomento_t">
+                    Tipo de Fomento
+                </option><option value="titulo_t">
+                    Título
+                </option><option value="todos_os_campos">
+                    Todos os campos
+                </option></select></label></div></div><div class="input clone-me busca-avancada-filtro"><div class="w75"><div class="w25 fleft pr10 box-sz"><label><select name="boolean1" id="boolean1"><option value="AND">
+                      
+                        E
+                      
+                    </option><option value="OR">
+                      
+                        OU
+                      
+                    </option><option value="NOT">
+                      
+                        NÃO
+                      
+                    </option></select></label></div><div class="w75 fleft"><label><input type="text" value="" name="q1"></label></div></div><div class="w25"><label><select name="field1" id="field1"><option value="">Todos</option><option value="area">
+                   Área de Conhecimento
+                 </option><option value="assuntos">
+                   Assunto
+                 </option><option value="convenio">
+                   Convênio
+                 </option><option value="empresa">
+                   Empresa
+                 </option><option value="instituicao">
+                   Instituição
+                 </option><option value="numero_processo">
+                   Número do Processo
+                 </option><option value="pais_instituicao_t">
+                   País (Instituição)
+                 </option><option value="pesquisadores">
+                   Pesquisador
+                 </option><option value="resumo">
+                   Resumo
+                 </option><option value="fomento_t">
+                   Tipo de Fomento
+                 </option><option value="titulo_t">
+                   Título
+                 </option><option value="todos_os_campos">
+                   Todos os campos
+                 </option></select></label></div></div><div class="input clone-me busca-avancada-filtro"><div class="w75"><div class="w25 fleft pr10 box-sz"><label><select name="boolean2" id="boolean2"><option value="AND">
+                      
+                        E
+                      
+                    </option><option value="OR">
+                      
+                        OU
+                      
+                    </option><option value="NOT">
+                      
+                        NÃO
+                      
+                    </option></select></label></div><div class="w75 fleft"><label><input type="text" value="" name="q2"></label></div></div><div class="w25"><label><select name="field2" id="field2"><option value="">Todos</option><option value="area">
+                   Área de Conhecimento
+                 </option><option value="assuntos">
+                   Assunto
+                 </option><option value="convenio">
+                   Convênio
+                 </option><option value="empresa">
+                   Empresa
+                 </option><option value="instituicao">
+                   Instituição
+                 </option><option value="numero_processo">
+                   Número do Processo
+                 </option><option value="pais_instituicao_t">
+                   País (Instituição)
+                 </option><option value="pesquisadores">
+                   Pesquisador
+                 </option><option value="resumo">
+                   Resumo
+                 </option><option value="fomento_t">
+                   Tipo de Fomento
+                 </option><option value="titulo_t">
+                   Título
+                 </option><option value="todos_os_campos">
+                   Todos os campos
+                 </option></select></label></div></div><div class="input clone-me busca-avancada-filtro"><div class="w75"><div class="w25 fleft pr10 box-sz"><label><select name="boolean3" id="boolean3"><option value="AND">
+                      
+                        E
+                      
+                    </option><option value="OR">
+                      
+                        OU
+                      
+                    </option><option value="NOT">
+                      
+                        NÃO
+                      
+                    </option></select></label></div><div class="w75 fleft"><label><input type="text" value="" name="q3"></label></div></div><div class="w25"><label><select name="field3" id="field3"><option value="">Todos</option><option value="area">
+                   Área de Conhecimento
+                 </option><option value="assuntos">
+                   Assunto
+                 </option><option value="convenio">
+                   Convênio
+                 </option><option value="empresa">
+                   Empresa
+                 </option><option value="instituicao">
+                   Instituição
+                 </option><option value="numero_processo">
+                   Número do Processo
+                 </option><option value="pais_instituicao_t">
+                   País (Instituição)
+                 </option><option value="pesquisadores">
+                   Pesquisador
+                 </option><option value="resumo">
+                   Resumo
+                 </option><option value="fomento_t">
+                   Tipo de Fomento
+                 </option><option value="titulo_t">
+                   Título
+                 </option><option value="todos_os_campos">
+                   Todos os campos
+                 </option></select></label></div></div><div class="input clone-me busca-avancada-filtro"><div class="w75"><div class="w25 fleft pr10 box-sz"><label><select name="boolean4" id="boolean4"><option value="AND">
+                      
+                        E
+                      
+                    </option><option value="OR">
+                      
+                        OU
+                      
+                    </option><option value="NOT">
+                      
+                        NÃO
+                      
+                    </option></select></label></div><div class="w75 fleft"><label><input type="text" value="" name="q4"></label></div></div><div class="w25"><label><select name="field4" id="field4"><option value="">Todos</option><option value="area">
+                   Área de Conhecimento
+                 </option><option value="assuntos">
+                   Assunto
+                 </option><option value="convenio">
+                   Convênio
+                 </option><option value="empresa">
+                   Empresa
+                 </option><option value="instituicao">
+                   Instituição
+                 </option><option value="numero_processo">
+                   Número do Processo
+                 </option><option value="pais_instituicao_t">
+                   País (Instituição)
+                 </option><option value="pesquisadores">
+                   Pesquisador
+                 </option><option value="resumo">
+                   Resumo
+                 </option><option value="fomento_t">
+                   Tipo de Fomento
+                 </option><option value="titulo_t">
+                   Título
+                 </option><option value="todos_os_campos">
+                   Todos os campos
+                 </option></select></label></div></div><div class="input"><div class="w40"><label><strong>Área do conhecimento</strong><select name="grande_area" class="w50"><option value="">Todos</option><option value="226">Ciências Agrárias</option><option value="157">Ciências Biológicas</option><option value="47">Ciências da Saúde</option><option value="1">Ciências Exatas e da Terra</option><option value="91">Ciências Humanas</option><option value="367">Ciências Sociais Aplicadas</option><option value="298">Engenharias</option><option value="425">Interdisciplinar</option><option value="268">Linguística, Letras e Artes</option></select></label><label><select name="area" class="w50" style="display: none;"></select></label></div><div class="w60"><strong>Ano de início</strong><div ><span class="aligned-inputs"><span>Entre</span><input style="height: 3.5rem;padding: 5px;" type="text" name="ano_inicio_de" value="" onkeypress="return isNumberKey(event) && textMaxLength(this, 4)" maxlength="4" size="4"/></span><span>e</span><input style="height: 3.5rem;padding: 5px;" type="text" name="ano_inicio_ate" value="" onkeypress="return isNumberKey(event) && textMaxLength(this, 4)" maxlength="4" size="4"/><input style="height: 3.5rem;padding: 5px;" name="search" class="btn" type="submit" value="Pesquisar"></div></div></div></form></div></section></div><script type="text/javascript">
+  function isNumberKey(evt) {
+      var charCode = (evt.which) ? evt.which : event.keyCode
+      return !(charCode > 31 && (charCode < 48 || charCode > 57))
+  }
+  function textMaxLength(inp, max_length) {
+    console.log(inp.value.length < max_length);
+    return inp.value.length < max_length;
+  }
+
+  $("select[name=grande_area]").on("change",function() {
+    if($("select[name=grande_area]").val() == "") {
+      $("select[name=area]").css("display", "none");
+    } else {
+      $.ajax({url: "/pt/pesquisa/avancada/pega_areas",
+          data : {"grande_area": $("select[name=grande_area]").val() },
+          type:'GET',
+          dataType: "json",
+          success: function(data) {
+              $("select[name=area]").empty();
+              $("select[name=area]").append($("<option value=\"\">Todos</option>"));
+              if(data.length > 0) {
+                $("select[name=area]").css("display", "inline-block");
+                for(i = 0; i < data.length; i++) {
+                  $("select[name=area]").append($("<option value=\"" + data[i].value + "\">" + data[i].text + "</option>"));
+                }
+              } else {
+                $("select[name=area]").css("display", "none");
+              }
+          },
+          error:function( result ){ console.log(["error", result]); }
+        });
+      }
+  });
+</script><div class="ovhidden"><div class="table padding-table pa5 block-table"><div class="row"><div class="w25"><section class="box blank hidden-print"><header class="bv_header" style="background:#2e4d85;"><span class="bv_h1" style="color:#ffffff; font-size:16px;">Conteúdos relacionados</span></header><div class="content rss"><section class="results padding"><ul class="list"><li><section class="box"><div class="content"><a class="link-color" href="/pt/bolsas/244894/reconstrucao-de-padroes-clinico-biologicos-com-ia-para-reducao-de-desigualdades-no-diagnostico-ginec/">Reconstrução de padrões clínico-biológicos com IA para redução de desigualdades no...</a></div></section></li><li><section class="box"><div class="content"><a class="link-color" href="/pt/bolsas/238483/mapeamento-de-vias-de-sinalizacao-a-partir-de-sintomas-e-hemogramas-com-apoio-de-mdl-vae/">Mapeamento de vias de sinalização a partir de sintomas e hemogramas com apoio de M...</a></div></section></li><li><section class="box"><div class="content"><a class="link-color" href="/pt/auxilios/119846/marieai-plataforma-multimodal-de-saude-da-mulher/">Marie.AI: Plataforma Multimodal de Saúde da Mulher</a></div></section></li><li><section class="box"><div class="content"><a class="link-color" href="/pt/bolsas/238482/reconstrucao-multimodal-de-achados-tomograficos-no-abdomen-inferior-para-treinamento-e-aprimoramento/">Reconstrução Multimodal de Achados Tomográficos no Abdômen Inferior para Treinamen...</a></div></section></li><li><section class="box"><div class="content"><a class="link-color" href="/pt/bolsas/238484/marieai-plataforma-multimodal-de-saude-da-mulher/">Marie.AI: plataforma multimodal de saúde da mulher</a></div></section></li><li><section class="box"><div class="content"><a class="link-color" href="/pt/bolsas/169582/impacto-da-endometriose-e-adenomiose-no-desfecho-da-reproducao-assistida/">Impacto da endometriose e adenomiose no desfecho da reprodução assistida</a></div></section></li><li><section class="box"><div class="content"><a class="link-color" href="/pt/auxilios/1355/estudo-de-polimorfismo-em-genes-responsaveis-pela-biossintese-acao-e-metabolizacao-de-esteroides-sex/">Estudo de polimorfismo em genes responsáveis pela biossíntese, ação e metabolizaçã...</a></div></section></li></ul></section></div></section></div><div class="w66"><section class="box transparent normal-fs"><header class="bv_header"><h1 class="bv_h1" >Integração de grafos fisiológicos ao MDL-VAE no Diagnóstico de Doenças Ginecológicas - Síndrome do ovário policístico, mioma, endometriose e câncer de ovário.</h1></header><div class="content formatted"><table><!-- Processo --><tr><td class="group_item align-right" style="white-space:nowrap;padding-right:5px;"><strong>Processo:</strong></td><td class="group_item" style="vertical-align: middle;">
+                        26/04565-2
+                    </td></tr><!-- Modalidade de apoio --><tr><td class="group_item align-right" style="white-space:nowrap;padding-right:5px;"><strong>Modalidade de apoio:</strong></td><td class="group_item" style="vertical-align: middle;"><a href="/pt/347/programa-capacitacao-treinamento-tecnico/">Bolsas no Brasil - Programa Capacita&ccedil;&atilde;o - Treinamento T&eacute;cnico</a></td></tr><!-- Data de Início da vigência --><tr><td class="group_item align-right" style="white-space:nowrap;padding-right:5px;"><strong>Data de Início da vigência:</strong></td><td class="group_item" style="vertical-align: middle;">
+                        
+                            01 de maio de 2026
+                        
+                    </td></tr><!-- Situação --><tr><td class="group_item align-right" style="white-space:nowrap;padding-right:5px;"><strong>Data de Término da vigência:</strong></td><td class="group_item" style="vertical-align: middle;">
+                            
+                                
+                                    31 de outubro de 2027
+                                
+                            
+                        </td></tr><!-- Área de conhecimento --><tr><td class="group_item align-right" style="white-space:nowrap;padding-right:5px;"><strong>Área de conhecimento:</strong></td><td class="group_item" style="vertical-align: middle;"><a href="/pt/area_conhecimento/425/interdisciplinar/">Interdisciplinar</a></td></tr><!-- Acordo de cooperação com a FAPESP --><!-- Sprint - Proposta de Mobilidade --><tr><td class="group_divisor"></td></tr><!-- Pesquisador responsável --><tr><td class="group_item align-right" style="white-space:nowrap;padding-right:5px;"><strong>Pesquisador responsável:</strong></td><td class="group_item" style="vertical-align: middle;"><a href="/pt/pesquisador/73377/paula-cristina-dos-santos/" >Paula Cristina dos Santos</a><a class="plataforma_lattes" onclick="window.open('https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4284645P5', '_blank','resizable=yes,scrollbars=yes,status=yes,width=1000,height=900');" href="javascript:;" title="Currículo Lattes"></a><a class="plataforma_google" onclick="window.open('https://scholar.google.com/citations?user=rtMZtEAAAAAJ&amp;hl=pt-BR', '_blank','resizable=yes,scrollbars=yes,status=yes,width=1000,height=900');" href="javascript:;" title="Google Scholar Citations"></a><a class="plataforma_researcherid" onclick="window.open('http://www.researcherid.com/rid/N-9332-2016', '_blank','resizable=yes,scrollbars=yes,status=yes,width=1000,height=900');" href="javascript:;" title="ResearcherID"></a><a class="plataforma_orcid" onclick="window.open('https://orcid.org/0000-0003-0535-3326', '_blank','resizable=yes,scrollbars=yes,status=yes,width=1000,height=900');" href="javascript:;" title="ORCID"></a></td></tr><!-- Beneficiário  --><tr><td class="group_item align-right" style="white-space:nowrap;padding-right:5px;"><strong>Beneficiário:</strong></td><td class="group_item" style="vertical-align: middle;"><a href="/pt/pesquisador/683244/alef-janguas-da-costa/" >Alef Janguas da Costa</a><a class="plataforma_lattes" onclick="window.open('https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&amp;id=K4831160H6', '_blank','resizable=yes,scrollbars=yes,status=yes,width=1000,height=900');" href="javascript:;" title="Currículo Lattes"></a><a class="plataforma_google" onclick="window.open('https://scholar.google.com/citations?user=DCSVR0YAAAAJ&amp;hl=pt-BR', '_blank','resizable=yes,scrollbars=yes,status=yes,width=1000,height=900');" href="javascript:;" title="Google Scholar Citations"></a><a class="plataforma_researcherid" onclick="window.open('https://www.webofscience.com/wos/author/rid/Q-4674-2018', '_blank','resizable=yes,scrollbars=yes,status=yes,width=1000,height=900');" href="javascript:;" title="ResearcherID"></a><a class="plataforma_orcid" onclick="window.open('https://orcid.org/0000-0001-6583-0580', '_blank','resizable=yes,scrollbars=yes,status=yes,width=1000,height=900');" href="javascript:;" title="ORCID"></a></td></tr><!-- responsavel_exterior/aNfitricao --><tr><td class="group_divisor"></td></tr><!-- CNAE --><tr><td class="group_item align-right" style="white-space:nowrap;padding-right:5px;"><strong>CNAE:</strong></td><td class="group_item" style="vertical-align: middle;">
+                                    
+                                        Desenvolvimento de programas de computador sob encomenda <br></td></tr><!-- Local de pesquisa --><tr><td class="group_divisor"></td></tr><!-- Vinculado ao auxílio --><tr><td class="group_item align-right" style="white-space:nowrap;padding-right:5px;"><strong>Vinculado ao auxílio:</strong></td><td class="group_item" style="vertical-align: middle;"><a href="/pt/auxilios/119846/marieai-plataforma-multimodal-de-saude-da-mulher/" >25/14126-3 - Marie.AI: Plataforma Multimodal de Saúde da Mulher</a>,
+                                AP.PIPE
+                            
+                        </td></tr><tr><td class="group_divisor"></td></tr><!-- Vinculado à bolsa --><!-- Auxílio(s) vinculado(s) --><!-- Bolsa(s) vinculada(s) --><!-- Processo(s) vinculado(s) --><tr><td class="group_divisor"></td></tr><!-- Assunto(s) --><tr><td class="group_item align-right" style="white-space:nowrap;padding-right:5px;"><strong>Assunto(s):</strong></td><td class="group_item" style="vertical-align: middle;"><a href="/pt/assunto/1602">Neoplasias ovarianas</a>
+                                    &nbsp;
+                                
+                                    <a href="/pt/assunto/157796">Epidemiologia</a>
+                                    &nbsp;
+                                
+                                    <a href="/pt/assunto/2135">Inteligência artificial</a></td></tr><tr><td class="group_item align-right" style="white-space:nowrap;padding-right:5px;"><strong>Palavra(s)-Chave do Pesquisador:</strong></td><td class="group_item" style="vertical-align: middle;"><span>Câncer de ovário | doenças ginecológicas benignas | Epidemiologia | Inteligência Artificial | Healthtech</span></td></tr><!-- Notas ??? --><!-- Resumo  --><tr><td colspan="2" class="ABNT-NBR"><p><strong>Resumo</strong></p><p id="resumo" style="align:justify">
+                                O bolsista atuará na modelagem bioinformática de vias de sinalização intracelular associadas a sintomas clínicos e parâmetros laboratoriais (especialmente hemograma), com o objetivo de enriquecer a explicabilidade do modelo MDL-VAE aplicado ao diagnóstico ginecológico multimodal. A partir de dados anonimizados e estruturados, o bolsista desenvolverá representações computacionais dessas vias, integrando sinais clínicos e respostas fisiopatológicas com base em conhecimento biomédico e em bases de dados públicas de referência, como KEGG, Reactome e GeneCards.As vias mapeadas serão incorporadas ao modelo de machine learning por meio de embeddings funcionais, permitindo visualização em tempo real de padrões fisiopatológicos e ampliando a transparência do suporte à decisão clínica. O foco do trabalho está na tradução de interações moleculares e mecanismos fisiopatológicos em grafos biológicos explicáveis, compreensíveis e operacionalizáveis em sistemas de IA médica. Espera-se, com isso, fortalecer a interpretabilidade do sistema, melhorar a integração entre dados clínico-laboratoriais e conhecimento biomolecular, e apoiar análises diagnósticas mais consistentes em condições ginecológicas como SOP, mioma, endometriose e câncer de ovário. (AU)
+                            </p></td></tr><tr><td class="group_divisor"></td></tr><!-- Matéria(s) publicada(s) --><!-- Revista --><!-- Pesquisa para Inovacao --><!-- Agência --><!--
+
+--><!-- Ajax Agência e NaMídia --><!-- Agência --><table id="agencia_table"><tr class="title_item"><td colspan="2" class="group_item align-right" style="white-space:nowrap;padding-right:5px; text-align: left"><strong>Matéria(s) publicada(s) na Agência FAPESP sobre a bolsa:</strong></td></tr><!-- --><tr class="group_item"><td style="padding: 5px 0;" ><a id="expand_agencia" class="link-color" style="cursor:pointer;" onclick="$('.materia_agencia').show(); $('#expand_agencia').hide(); $('#collapse_agencia').show();"><i class="fa fa-plus fa_Style"></i>Mais itens</a><a id="collapse_agencia" class="link-color" style="cursor:pointer;" onclick="$('.materia_agencia').hide(); $('#expand_agencia').show(); $('#collapse_agencia').hide();"><i class="fa fa-minus fa_Style"></i>Menos itens</a></td></tr><!--
+  <script type="text/javascript">
+    $('#collapse_agencia').hide();
+
+    function preenche_materias_agencia(idioma, data) {
+      tparent = $('#agencia_table');
+      tr = $('#agencia_table').find('#link_agencia_item');
+      sptr = $('#agencia_table').find('tr.group_item');
+
+      // Remove o elemento em caso não há dados
+      if(data.length==0){
+          tparent.remove();
+          return
+      }
+
+      data.sort(function(a, b){
+          return new Date(b.dt_publication) - new Date(a.dt_publication)
+      })
+
+      filtered = data.filter(function(jobj) {
+          return jobj.lang == idioma || jobj.lang == "es"
+      });
+
+      $.each(filtered, function(key, jobj) {
+        if (key < 5 ){
+            newtr = $('<div>').append(tr.clone().addClass('materia_agencia_fix')).html();
+            } else if (key < 40){
+              newtr = $('<div>').append(tr.clone().addClass('materia_agencia').hide()).html();	
+              } else{
+                return
+              }
+            // Proxy para Metricas
+            url = jobj.url.replace('agencia.fapesp.br', 'bv.fapesp.br/agenciabv')
+            tr1 = newtr.replace("URL", url)
+            tr2 = tr1.replace("TITULO", (jobj.title))
+            tparent.append(tr2);
+      });
+
+      tparent.append(sptr);
+      tr.remove();
+}
+$('.materia_agencia').hide();
+  </script>
+--><tr id="link_agencia_item"><td colspan="2" class="group_item align-right" style="white-space:nowrap;padding-right:5px; text-align: left"><a class="link-color" href="URL">TITULO</a>&nbsp;
+    </td></tr><!-- 
+  <tr class="materia_namidia"><td colspan="2" class="group_item align-right" style="white-space:nowrap;padding-right:5px; text-align: left"><a class="link-color" href="URL">TITULO</a>&nbsp;
+      </td></tr>
+--><!-- --><tr class="group_item"><td class="group_divisor"></td></tr></table><table id="namidia_table"><tr class=""><td colspan="2" class="group_item" style="padding-right:5px;" ><strong id="namidia_title_total">Matéria(s) publicada(s) em Outras Mídias ( <a href="" id="namidia_link"></a>):
+        </strong></td></tr><tr class="group_item"><td style="padding: 5px 0;"><a id="expand_namidia" class="link-color" style="cursor:pointer;" onclick="$('.materia_namidia').show(); $('#expand_namidia').hide(); $('#collapse_namidia').show();"><i class="fa fa-plus fa_Style"></i>Mais itens</a><a id="collapse_namidia" class="link-color" style="cursor:pointer;" onclick="$('.materia_namidia').hide(); $('#expand_namidia').show(); $('#collapse_namidia').hide();"><i class="fa fa-minus fa_Style"></i>Menos itens</a></td></tr><!--
+<script type="text/javascript">
+  function preenche_materias_namidia(idioma, data) {
+    tparent = $('#namidia_table');
+    trfx = $('#namidia_table').find('tr.materia_namidia_fix');
+    trhd = $('#namidia_table').find('tr.materia_namidia');
+    sptr = $('#namidia_table').find('tr.group_item');
+
+    // Remove o elemento em caso não há dados
+    if(data.length==0){
+        tparent.remove();
+        return
+    }else{
+      var hyperlink_element =  $('#namidia_link')
+      hyperlink_element.text(data.length+ ' total')
+    }
+
+    data.sort(function(a, b){
+        return new Date(b.dt_publication) - new Date(a.dt_publication)
+    })
+
+    $.each(data, function(key, jobj) {
+            if(key < 3){
+                // Gambi para pegar ou OuterHtml
+                newtr = $('<div>').append(trfx.clone()).html();
+            }else{
+                if(key > 50) return
+                // Gambi para pegar ou OuterHtml
+                newtr = $('<div>').append(trhd.clone()).html();
+            }
+
+            // Proxy para Metricas
+            //url = jobj.url.replace('namidiabv.fapesp.br', 'bv.fapesp.br/namidiabv')
+            url = jobj.url.replace('namidiabv.fapesp.br')//, 'bv.fapesp.br/namidiabv')
+            tr1 = newtr.replace("URL", url)
+            tr2 = tr1.replace("TITULO", jobj.title)
+            tr3 = tr2.replace("VEICULO", jobj.vehicle)
+            tr4 = tr3.replace("DATA", jobj.dt_publication)
+            tr5 = tr4.replace("DATA", jobj.dt_publication)
+            tparent.append(tr4);
+    });
+
+    tparent.append(sptr);
+    trfx.remove();
+    trhd.remove();
+}
+
+</script>
+--><tr class="materia_namidia_fix"><td colspan="2" class="group_item" style="vertical-align: middle;" ></b>VEICULO</b>: <a class="link-color" href="URL">TITULO</a> (DATA)
+      </td></tr><tr class="materia_namidia"><td colspan="2" class="group_item" style="vertical-align: middle;" ></b>VEICULO</b>: <a class="link-color" href="URL">TITULO</a> (DATA)
+      </td></tr><!-- --><tr class="group_item"><td colspan="2" class="group_divisor"></td></tr></tr></table></table></div></section></div></div></div></div></div></div><footer id="footer" class="hidden-print"><div class="copy"><div class="wrap"></span><p>BV/FAPESP - Biblioteca Virtual da Fundação de Amparo à Pesquisa do Estado de São Paulo</p></span><div style="width:100%; display:inline-block"><p>R. Pio XI, 1500 - Alto da Lapa - CEP 05468-901 - São Paulo/SP - Brasil | <a href="https://fapesp.br/converse/informacoes/centro-de-documentacao-e-informacao-biblioteca-virtual" style="font-weight: bold;" target="_blank">Converse com a FAPESP-BV</a></p></div></div></div></footer>
+      
+      <!-- Modal Ultimas Buscas-->
+      <div id="div_mostra_ultimas_buscas" class="wrap" style="display:None">
+        <div id="modal_ultimas_buscas">
+          
+        </div>
+      </div>
+      
+      <script type="text/javascript">
+        // Move o submenu para a esquerda.
+        $(document).on("click", ".dropdown-toggle", function () {
+          if ($(window).width() > 768) {
+            $(this).next().position({
+              my: "left top",
+              at: "left bottom",
+              of: $("#navbarNavDropdown"),
+              collision: "flip flip"
+            });
+            // debugger;
+          }
+        });
+
+        /*
+        * Por algum motivo desconhecido, o menu nao some ao redimensionar tela.
+        * Forcando com o JQuery.
+        */
+        function hideShowBusca(match_media) {
+          // Small
+          if (match_media.matches) { // If media query matches
+            // $('#navbarNavDropdown').hide()
+            // debugger;
+            $("#busca").appendTo("#busca_is_mobile");
+            $("#busca").toggle()
+
+            // Large
+          } else {
+            $('#navbarNavDropdown').show()
+            $("#busca").appendTo("#busca_is_not_mobile");
+            $("#busca").toggle()
+
+          }
+        }
+
+        function hideBuscaAvancada(match_media) {
+          $("#barra_de_busca").removeClass();
+          $("#campo_de_busca").removeClass();
+          $("#botao_busca_avancada").removeClass();
+          $("#barra_de_busca").show();
+          $("#campo_de_busca").show();
+          $("#botao_busca_avancada").show();
+
+          // Small
+          if (match_media.matches) {
+            $("#barra_de_busca").addClass('w100');
+            $("#campo_de_busca").hide();
+            $("#botao_busca_avancada").hide();
+            // Large
+          } else {
+            $("#barra_de_busca").addClass('w50');
+            $("#campo_de_busca").addClass('w25');
+            $("#botao_busca_avancada").addClass('w25');
+          }
+        }
+
+        var match_media = window.matchMedia("(max-width: 851px)")
+        hideShowBusca(match_media) // Call listener function at run time
+        match_media.addListener(hideShowBusca) // Attach listener function on state changes
+        hideBuscaAvancada(match_media)
+        match_media.addListener(hideBuscaAvancada)
+
+        // Dropdown qdo multinivel nao fecha, por causa da classe open.
+        $('.dropdown-toggle').on("click", function (e) {
+          $(this).parent('li').removeClass('open')
+        })
+      </script>
+    <script type="text/javascript" async="async" src="/__zenedge/assets/f.js?v=1674207422"></script><script>(function () { var v = 1792317146 * 3.1415926535898; v = Math.floor(v); document.cookie = "__zjc4496="+v+"; expires=Sun, 18 Oct 2026 10:53:40 UTC; path=/"; })()</script></body>
+</html>
