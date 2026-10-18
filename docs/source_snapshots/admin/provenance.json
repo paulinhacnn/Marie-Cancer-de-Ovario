@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-10-18T08:33:24.032059+00:00",
+  "sources": [
+    {
+      "url": "https://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/obt10uf.def",
+      "retained_file": "tabnet.html",
+      "sha256": "a501c44c0c2d145939d3d0b1c392184e43ad39effea50646bd7b44fc72915033",
+      "bytes": 241304,
+      "retrieved_at": "2026-10-18T08:27:08.417244+00:00"
+    },
+    {
+      "url": "https://tabnet.datasus.gov.br/cgi/tabcgi.exe?sim/cnv/obt10uf.def",
+      "retained_file": "sim_2024_uf_age.html",
+      "sha256": "4b157b84b8070d96d1344366a00db4d2b5c2a805cff465c7174e8e0f93f6dbff",
+      "bytes": 8434,
+      "retrieved_at": "2026-10-18T08:28:42.902230+00:00"
+    },
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/numeros/estimativa/estado-capital/brasil/por-estado/por-estado/",
+      "retained_file": "inca_2026_uf.html",
+      "sha256": "b845ff0743cd409a08aa67338dd989af3821fcb1c1b58a017059d3d94885d8d6",
+      "bytes": 170009,
+      "retrieved_at": "2026-10-18T08:30:07.358261+00:00"
+    },
+    {
+      "url": "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-populacao",
+      "retained_file": "inca_ovario_population.html",
+      "sha256": "fea6fca9c3ccfaee6d02308e2a50e9c7053b3dbb1d5301bd336c4fd38eb66cc9",
+      "bytes": 146308,
+      "retrieved_at": "2026-10-18T08:30:05.933373+00:00"
+    }
+  ],
+  "reproduction": {
+    "script": "extract_ovarian_admin.py",
+    "script_sha256": "1643463628d61e0e10b8dab9d0c0b7911e09452e85d9353b81ceb1ace1d53b30",
+    "query_parameters": "sim_2024_request.json",
+    "query_parameters_sha256": "96be4c377e8a5ba0c5e484148b0224caf055def29342e1382d28fdac85002ba3"
+  },
+  "output": "ovarian_admin_real.json",
+  "output_sha256": "8fdeb58275b2445b2009e2695ece76ed6f47681bc806fe4460c5254411bb3b40"
+}
