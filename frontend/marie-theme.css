@@ -1,0 +1,163 @@
+/* Marie Câncer de Ovário | Identidade visual inspirada no logotipo oficial.
+ * Vinho/ameixa: marca e navegação. Rosa: ação e destaques.
+ * Verde sálvia: dados populacionais e perspectiva One Health.
+ * Marfim: superfícies. Não altera valores, cálculos, mapas ou limiares.
+ */
+:root {
+  --ink: #48243a;
+  --body: #51424c;
+  --muted: #776b73;
+  --line: #eadfe4;
+  --bg: #fbf7f4;
+  --white: #ffffff;
+  --teal: #9c335e;
+  --teal-dark: #631a40;
+  --mint: #f8e8ee;
+  --mint-bright: #e8c5d4;
+  --amber: #af793e;
+  --sand: #fff7eb;
+  --shadow: 0 5px 24px #6a24400a;
+  --marie-wine: #631a40;
+  --marie-rose: #ac3f71;
+  --marie-sage: #438a6c;
+  --marie-pale-green: #eaf4ed;
+  --marie-cream: #fbf7f4;
+}
+/* Conteúdo sempre dimensionado pela sua altura real no modo incorporado.
+   Não usar 100vh/min-height:100vh: o viewport interno cresce com o iframe. */
+html.marie-streamlit-embedded,
+html.marie-streamlit-embedded body {
+  height: auto;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+html.marie-streamlit-embedded .shell { min-height: 0; }
+html.marie-streamlit-embedded #app { min-height: 0; }
+/* O menu preserva seu cartão informativo no primeiro painel visível,
+   mesmo que a altura total do iframe cresça para mostrar todas as seções. */
+html.marie-streamlit-embedded .sidebar-bottom { margin-top: 24px; }
+/* No modo standalone, mantém o scrollbar dentro da própria página HTML. */
+html:not(.marie-streamlit-embedded) { overflow-y: auto; scrollbar-color: #ab6e88 #fbf7f4; }
+body { background: var(--bg); color: var(--body); }
+a, .button.ghost, .filter-reset, .page-foot a { color: var(--teal); }
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,[tabindex]:focus-visible {
+  outline-color: #c75f8a;
+}
+*::-webkit-scrollbar-track { background: #f7ecf0; }
+*::-webkit-scrollbar-thumb { background: #b27c94; border-color: #f7ecf0; }
+*::-webkit-scrollbar-thumb:hover { background: #7e3157; }
+
+/* Menu vinho com contraste claro e seleção rosa. */
+.sidebar {
+  background: linear-gradient(180deg, #631a40 0%, #53152f 100%);
+  color: #f7e7ee;
+  scrollbar-color: #b97894 #581831;
+}
+.sidebar::-webkit-scrollbar-track { background: #581831; }
+.sidebar::-webkit-scrollbar-thumb { background: #b97894; border-color: #581831; }
+.nav-label { color: #e7bfcf; }
+.nav button { color: #f1dfe8; }
+.nav button:hover { color: #fff; background: #ffffff1a; }
+.nav button.active { background: #fbe5ee; color: #601a3d; }
+.nav button .badge { border-color: #e6b7c7; }
+.sidebar-note { border-color: #e8bac33d; background: #ffffff0d; color: #f1d5e0; }
+.sidebar-note strong, .profile-name { color: #fff; }
+.sidebar-note a { color: #f4c4d6; }
+.sidebar-profile { border-top-color: #e8bac344; }
+.profile-role, .sidebar-profile>.icon { color: #e2adc5; }
+.avatar { background: #f1d5df; color: #641a40; }
+.sidebar .marie-brand { background: #fbf3ec; box-shadow: 0 4px 18px #27061915; }
+
+/* Cabeçalho e elementos funcionais. */
+.topbar { background: #fffdfc; border-bottom-color: #eee1e5; }
+.breadcrumb, .topbar .version { color: #8e7a85; }
+.breadcrumb strong { color: #6e314c; }
+.live-pill { color: #327455; background: #e9f4ed; }
+.status-dot { background: #56a17a; }
+.eyebrow { color: #91617d; }
+.page-heading h1, .panel-title, .modal-header h2 { color: #4c1e37; }
+.page-heading p, .panel-sub { color: #756772; }
+.button { border-color: #eadce2; color: #5c2c44; }
+.button:hover, button.icon-button:hover { border-color: #dbb3c5; background: #fff1f6; }
+.button.primary { background: #83284f; border-color: #83284f; color: #fff; }
+.button.primary:hover { background: #6e1a42; border-color: #6e1a42; }
+.button.ghost { color: #93375b; }
+.button.ghost:hover { color: #6f2349; }
+.filter-field { border-color: #e8dbe1; }
+.filter-field>.icon, .filter-field span { color: #9b7689; }
+.filter-field select { color: #5f2844; }
+.filter-field select:focus-visible { outline-color: #a94270; }
+.filter-count { color: #8c7982; }
+.real-banner { background: #edf5ee; border-color: #d7e8dc; color: #326547; }
+.real-banner button { color: #477458; }
+
+/* KPIs e superfícies, com alternância vinho/verde do logotipo. */
+.panel, .kpi, .source-card, .context-card { border-color: #eadfe4; background: #fffdfc; }
+.kpi-value, .metric-tile .number, .map-summary strong { color: #4d203a; }
+.kpi-top { color: #7d6876; }
+.kpi-top .metric-icon { color: #9e3b67; background: #f7e8ef; }
+.kpi.accent { background: #f9eaf0; border-color: #edd3de; }
+.kpi.accent .metric-icon { background: #efd3df; color: #8a2855; }
+.kpi.accent:after { border-color: #c87e9a48; box-shadow: 0 0 0 11px #d7a0b30d; }
+.kpi-sub, .panel-foot, .metric-tile p { color: #7c6b75; }
+.insights-panel { background: #fffafc; }
+.insight-intro { color: #448667; }
+.insight h3, .source-card h3, .text-block h3 { color: #5f2543; }
+.insight-action, .insight-action button { color: #914063; }
+
+/* Hero One Health: vinho + rosé com destaque verde botânico. */
+.onehealth-hero {
+  background: linear-gradient(110deg, #5a1737 0%, #8d2e59 61%, #438668 100%);
+  border-color: #804260;
+  color: #fff9f8;
+}
+.onehealth-hero::after { border-color: #f1dce54d; box-shadow: 0 0 0 32px #ffeff011, 0 0 0 64px #ffeff006; }
+.onehealth-label { color: #f5cedf; }
+.onehealth-hero h2 { color: #fffafa; }
+.onehealth-hero p { color: #ffedf3; }
+.onehealth-hero .button { background: #f8e9ec; color: #5e1b3c; border-color: #f8e9ec; }
+.onehealth-hero .button:hover { background: #fff; border-color: #fff; }
+
+/* Cartografia e gráficos continuam usando o verde da Marie como escala de dados. */
+.map-legend, .map-note, .chart-label, .chart-tick { color: #746c73; }
+.hbar-value, .relationship-value { color: #5f2743; }
+.relationship-label strong, .heatmap-table th { color: #4c3944; }
+.relationship-track { background: #e9f1ea; }
+.relationship-ci, .relationship-ci::before, .relationship-ci::after { background: #2a674d; }
+.reading-card { background: #f6edf1; border-color: #ead4df; color: #68344e; }
+.reading-card p { color: #715664; }
+.axis-sources>span { background: #faf1f5; border-color: #eedde5; color: #6f435b; }
+.axis-sources b { background: #efd2df; color: #70264b; }
+.preset-row button { background: #fcf1f6; border-color: #ecd6e0; color: #663149; }
+.preset-row button:hover { background: #f6deea; border-color: #deb0c5; }
+.heatmap-cell:hover { box-shadow: inset 0 0 0 2px #7d2f55; }
+
+/* Painéis de contexto, conteúdo e diálogos. */
+.cohort-bar, .sample-strip { background: #f4edf0; border-color: #e8d7df; color: #6b3d57; }
+.institutional-strip { border-color: #eadfe4; border-left-color: #31578a; }
+.modal, .overlay .modal { border-color: #ebdce3; }
+.modal-header, .modal-footer { border-color: #eddfe5; }
+.meta-grid>div, .agenda-item { background: #fffafc; border-color: #ecdce4; }
+.meta-grid strong, .agenda-item h3 { color: #72294e; }
+#toast { background: #641e42; color: #fff5fa; }
+.mobile-backdrop.show { background: #44162b99; }
+
+/* Ajuste acessível da sidebar em telas de pouca altura. */
+@media (max-height: 760px) {
+  .sidebar { padding-top: 16px; padding-bottom: 14px; }
+  .sidebar-note { margin-top: 14px; margin-bottom: 12px; }
+}
+@media print {
+  html.marie-streamlit-embedded, html.marie-streamlit-embedded body { overflow: visible; }
+  .onehealth-hero { color: #fff; print-color-adjust: exact; }
+}
+
+/* English/Portuguese language switch: persistent, accessible and responsive. */
+.lang-switch{display:flex;align-items:center;gap:3px;padding:3px;background:#f7e6ed;border:1px solid #ead5df;border-radius:9px;white-space:nowrap}
+.lang-switch button{background:transparent;border:0;border-radius:6px;padding:5px 9px;color:#78435e;font-size:11px;min-width:34px;font-weight:700}
+.lang-switch button[aria-pressed="true"]{background:#722345;color:#fff;box-shadow:0 1px 4px #4d122429}
+.lang-switch button:focus-visible{outline:2px solid #ac4670;outline-offset:2px}
+@media(max-width:620px){.topbar-right{gap:7px}.lang-switch button{padding:5px}.topbar .version{display:none}}
+/* Sidebar is independently scrollable on compact displays. */
+.sidebar{overflow-y:auto;overscroll-behavior:contain}
