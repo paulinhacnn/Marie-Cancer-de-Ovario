@@ -1,0 +1,28 @@
+{
+  "reviewed_at": "2026-10-18",
+  "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9985039/",
+  "doi": "10.1016/j.eclinm.2023.101840",
+  "license": "CC BY 4.0",
+  "files": [
+    {
+      "path": "docs/source_snapshots/ukbiobank/chang_2023_fulltext.xml",
+      "sha256": "7dcfd98b59274a16ffdb8f0cb60dfda7b25b694566d52cb698933da42f0ad167",
+      "bytes": 147978
+    },
+    {
+      "path": "docs/source_snapshots/ukbiobank/chang_2023_supplement.pdf",
+      "sha256": "d7ef61cbeb2f57de2f447860d31c7ccf3ffbc29b9e7b530f4bea14c3c03f70ad",
+      "bytes": 606718
+    },
+    {
+      "path": "docs/source_snapshots/ukbiobank/chang_2023_supplement.txt",
+      "sha256": "103c09510a9f9f143ae1f46909f9bdfbf113f8c8c573e618d7d0866783fd7e29",
+      "bytes": 83899
+    },
+    {
+      "path": "docs/source_snapshots/ukbiobank/verified_extract.json",
+      "sha256": "2b090f2c7d893979e305da37e235661128cdd3a0b711a6905a99497bc14b62e1",
+      "bytes": 15163
+    }
+  ]
+}
