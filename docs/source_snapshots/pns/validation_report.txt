@@ -1,0 +1,33 @@
+VALIDAÇÃO DE DADOS REAIS PNS 2019 PARA PAINEL DE OVÁRIO
+
+Resultado: verificações concluídas com sucesso.
+Fonte dos microdados: https://ftp.ibge.gov.br/PNS/2019/Microdados/Dados/PNS_2019_20220525.zip
+Fonte do dicionário: https://ftp.ibge.gov.br/PNS/2019/Microdados/Documentacao/Dicionario_e_input_20220530.zip
+SHA256 ZIP: a789f6b0cbf6057111939fb3d1fe62ad1d5e848ba9c1f7860d7b44daa4be6057
+Registros brutos: 293726
+Moradores selecionados entrevistados com peso válido: 90846
+Mulheres adultas observadas: 46869
+Relato de diagnóstico de ovário na amostra: 53
+Sem relato de ovário: 46816
+População feminina adulta representada em 2019 (soma dos pesos): 84618612.77
+Desenho completo respondente: 8027 PSUs, 574 estratos, 7453 graus de liberdade.
+Ultraprocessados em adultos de ambos os sexos: 14.3053%; publicação IBGE: 14,3% (reproduzida a uma casa).
+Partições por UF, idade e coorte foram conferidas sem duplicação.
+A variância incorpora estratos e conglomerados; membros fora do domínio contribuem com zero no PSU, sem remover o PSU.
+IC de proporção interior com variância positiva: transformação logit e quantil t; aproximação com reposição no primeiro estágio, sem FPC.
+Não foi aplicada aproximação de Kish ou amostragem aleatória simples aos intervalos.
+Versão 1.5 exploratória: por solicitação da usuária, contagens reais e pontos estimados são mostrados mesmo com n<30, célula<5 ou CV>30%, acompanhados de aviso ainda inconclusivo.
+Os limiares são critérios internos de alerta, não regras oficiais do IBGE; não há supressão por essas condições nem supressão complementar da coorte no_ovarian.
+Com respostas válidas, zero evento é mostrado como 0% observado e nEvent=0; todos os eventos como 100%. IC/CV são null nos limites, sem certeza populacional fabricada. Sem denominador válido, o resultado é no_data.
+Desvios-padrão residuais abaixo de 64 épsilons de máquina na escala da proporção são tratados como numericamente não informativos, com IC/CV null e motivo no_variance.
+Contagens n, nValid, nEvent, missing e nPaired são números amostrais reais; totais women são somas ponderadas e não número observado de participantes.
+Cruzamentos incluem totais ponderados calculados diretamente dos pesos e quatro percentuais condicionais com IC Taylor próprio.
+Água: A005010=1 é abastecimento principal pela rede geral; A009010=1–4 é tratamento da água de beber no domicílio. Nenhuma variável comprova potabilidade.
+Escolaridade: higherEducation usa somente VDD004A=7 (superior completo), com respostas1–7 no denominador; superior incompleto não é contado como completo.
+Campo Q121014 é multirresposta e inclui diagnóstico atual/passado; dados transversais não demonstram causalidade.
+IMC usa valores finais REFERIDOS, inclusive imputação IBGE; exclui gravidez conhecida/indefinida; não usa dados W aferidos.
+Não foram aplicados limites ad hoc adicionais de IMC além das faixas válidas do dicionário; consultar min/max em validation.json.
+Atividade física foi preservada em memória como componentes; nenhum indicador de inatividade sem validação foi publicado.
+Somente agregados foram exportados. Nenhum identificador de pessoa, domicílio ou UPA aparece nos JSONs.
+O TXT e o ZIP brutos são insumos de reprodução e não devem ser incluídos no projeto publicado.
+Duração do processamento: 28.05 segundos.
