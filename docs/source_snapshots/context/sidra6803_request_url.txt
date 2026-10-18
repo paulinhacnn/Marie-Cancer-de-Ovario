@@ -1,0 +1,1 @@
+https://servicodados.ibge.gov.br/api/v3/agregados/6803/periodos/2022/variaveis/381?localidades=N1%5Ball%5D%7CN3%5Ball%5D&classificacao=1821%5B72129%2C72144%5D

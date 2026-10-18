@@ -1,0 +1,79 @@
+{
+  "schema_version": "oncolens-context-source-snapshots-1.0",
+  "captured_at": "2026-10-18",
+  "reference_artifact": "frontend/data/context.json",
+  "reference_sha256": "f919b475e79c027cabe83afae4d27a618f33139f0f4900dc23ede27d20d1a33e",
+  "source_years": {
+    "water": 2022,
+    "idhm_primary": 2021,
+    "idhm_alternative": 2019,
+    "idhm_workbook_last_year": 2021
+  },
+  "reproduction_script": "scripts/build_context.py",
+  "requires_network": false,
+  "files": [
+    {
+      "file": "sidra6803_metadata.json",
+      "source_url": "https://servicodados.ibge.gov.br/api/v3/agregados/6803/metadados",
+      "bytes": 3091,
+      "sha256": "e37e66ed4edb80756b714e8cecf1f26350de9fb0b80891f755c700c88f4d70d2",
+      "description": "Metadados originais da tabela SIDRA; JSON após descompressão HTTP."
+    },
+    {
+      "file": "sidra6803_values.json",
+      "source_url": "https://servicodados.ibge.gov.br/api/v3/agregados/6803/periodos/2022/variaveis/381?localidades=N1%5Ball%5D%7CN3%5Ball%5D&classificacao=1821%5B72129%2C72144%5D",
+      "bytes": 7544,
+      "sha256": "c725920774f055cdc6bcf873170c04bb877313ac5d6fc91239ba2f9b44bbbdae",
+      "description": "Resposta original da API SIDRA; JSON após descompressão HTTP."
+    },
+    {
+      "file": "sidra6803_request_url.txt",
+      "source_url": "https://servicodados.ibge.gov.br/api/v3/agregados/6803/periodos/2022/variaveis/381?localidades=N1%5Ball%5D%7CN3%5Ball%5D&classificacao=1821%5B72129%2C72144%5D",
+      "bytes": 159,
+      "sha256": "be108fc09aacac8b6ce346eae492bce9f6468e48c8c674b43746e27f00581328",
+      "description": "URL exata utilizada para a consulta."
+    },
+    {
+      "file": "base_de_dados.xlsx",
+      "source_url": "https://www.undp.org/sites/g/files/zskgke326/files/2023-07/base_de_dados.xlsx",
+      "bytes": 331014,
+      "sha256": "586ddcb56551d6c3fe294e583c9ed5465a76eb039d787ecc17e5bab2e410f6bb",
+      "description": "Planilha original PNUD; série 2012–2021, aba Base de Dados."
+    },
+    {
+      "file": "fontes_1.xlsx",
+      "source_url": "https://www.undp.org/sites/g/files/zskgke326/files/2023-07/fontes_1.xlsx",
+      "bytes": 18233,
+      "sha256": "47b25ae9dfd737a5618a5809406332c219ba80bbe4fde5ab9e4219b3151eead3",
+      "description": "Planilha original PNUD com definições, fórmulas e fontes."
+    },
+    {
+      "file": "idhm_sources.txt",
+      "source_url": "https://www.undp.org/sites/g/files/zskgke326/files/2023-07/fontes_1.xlsx",
+      "bytes": 34666,
+      "sha256": "eb08d3940845dfec816cdf2a02c4cd71796e9e0782b3f6bafa3436e207703147",
+      "description": "Extração textual auxiliar da planilha de fontes; não substitui o original."
+    },
+    {
+      "file": "water_sources_notes.txt",
+      "source_url": "https://sidra.ibge.gov.br/tabela/6803",
+      "bytes": 1339,
+      "sha256": "a1ca214e8407da53f034e455a9d0e1a05d1bf7d44cadc294272fee0c98f05ac5",
+      "description": "Notas da extração e da interpretação do indicador de abastecimento."
+    },
+    {
+      "file": "context_metadata.json",
+      "source_url": null,
+      "bytes": 5819,
+      "sha256": "06f4bca3b07831694f0b0f62730ca1708497e894e08d6fe87d130c4e963ebc7c",
+      "description": "Metadados editoriais fixados do contexto; as linhas de dados são reconstruídas das fontes originais."
+    },
+    {
+      "file": "water_access_census2022_uf.json",
+      "source_url": "https://sidra.ibge.gov.br/tabela/6803",
+      "bytes": 6892,
+      "sha256": "b95b93683e1b066ef4c35a2b03e9090b22f90e1002bd20fe6fb4111eab10f015",
+      "description": "Extração derivada de abastecimento, citada nas notas. A reprodução utiliza as respostas originais da API."
+    }
+  ]
+}

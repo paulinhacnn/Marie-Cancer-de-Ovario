@@ -1,0 +1,13 @@
+ABASTECIMENTO POR REDE — CENSO 2022
+
+JSON: water_access_census2022_uf.json (Brasil e 27 UFs).
+Fonte: SIDRA 6803; variável 381; classificação 1821; categorias 72144 (rede como forma principal) e 72129 (total). Valores recuperados diretamente da API pública, com metadados e resposta bruta preservados. Soma das contagens das 27 UFs confere com Brasil.
+
+Unidade: domicílios particulares permanentes ocupados. Brasil: 60.775.085/72.456.368 = 83,8782%, arredondado 83,9%. Relatório oficial IBGE liv102134 confirma 83,9% no conjunto nacional de domicílios (não confundir com seu recorte de favelas).
+
+É abastecimento por rede como fonte principal, não potabilidade, tratamento, continuidade ou exposição a contaminantes. Não é o IN055 do SNIS, cujo denominador é população atendida e universo de prestadores. Não é um indicador feminino.
+
+Uso OneHealth: contexto estadual de infraestrutura em 2022. PNS2019 oferece perguntas domiciliares ligadas à mesma entrevistada; Censo2022 oferece contexto ecológico em outro ano. Não vincular registros individuais por UF/idade, não atribuir efeito causal ovariano ao indicador e não rotular como água comprovadamente tratada.
+
+Link tabela: https://sidra.ibge.gov.br/tabela/6803
+Publicação de conferência: https://www.ibge.gov.br/biblioteca/visualizacao/livros/liv102134.pdf

@@ -1,0 +1,250 @@
+{
+  "id": "census2022_households_network_main",
+  "year": 2022,
+  "retrieved_at": "2026-10-18",
+  "is_synthetic": false,
+  "source": "IBGE — Censo Demográfico 2022, SIDRA 6803",
+  "source_url": "https://sidra.ibge.gov.br/tabela/6803",
+  "api_url": "https://servicodados.ibge.gov.br/api/v3/agregados/6803/periodos/2022/variaveis/381?localidades=N1%5Ball%5D%7CN3%5Ball%5D&classificacao=1821%5B72129%2C72144%5D",
+  "indicator": "Domicílios com rede geral como principal forma de abastecimento de água",
+  "definition": "Percentual de domicílios particulares permanentes ocupados que possuem ligação à rede geral e a utilizam como forma principal de abastecimento. Numerador: categoria 72144; denominador: categoria 72129 (Total), classificação 1821, variável 381.",
+  "unit": "% de domicílios particulares permanentes ocupados",
+  "calculation": "100 × households_network_main / households_total; quatro casas decimais, calculadas das contagens oficiais",
+  "interpretation": "Indicador contextual de infraestrutura domiciliar. Não mede potabilidade, tratamento doméstico, contaminantes químicos ou exposição individual de mulheres.",
+  "comparison_to_pns": "A PNS utiliza entrevistadas e pesos amostrais de 2019; este Censo descreve domicílios em 2022. Associação por UF é ecológica e não une as mesmas pessoas.",
+  "comparison_to_snis": "Não é IN055: o indicador do SNIS mede atendimento da população por redes públicas; aqui a unidade e o denominador são domicílios.",
+  "verification": {
+    "territories": 28,
+    "uf_counts_sum_to_brazil": true,
+    "brazil_pct_rounded_one_decimal": 83.9,
+    "published_brazil_pct": 83.9,
+    "matches_published_to_one_decimal": true,
+    "published_context_url": "https://www.ibge.gov.br/biblioteca/visualizacao/livros/liv102134.pdf"
+  },
+  "rows": [
+    {
+      "ibge_code": "1",
+      "name": "Brasil",
+      "households_total": 72456368,
+      "uf": "BR",
+      "households_network_main": 60775085,
+      "pct": 83.8782
+    },
+    {
+      "ibge_code": "11",
+      "name": "Rondônia",
+      "households_total": 555099,
+      "uf": "RO",
+      "households_network_main": 256189,
+      "pct": 46.1519
+    },
+    {
+      "ibge_code": "12",
+      "name": "Acre",
+      "households_total": 261001,
+      "uf": "AC",
+      "households_network_main": 137184,
+      "pct": 52.5607
+    },
+    {
+      "ibge_code": "13",
+      "name": "Amazonas",
+      "households_total": 1079880,
+      "uf": "AM",
+      "households_network_main": 713550,
+      "pct": 66.0768
+    },
+    {
+      "ibge_code": "14",
+      "name": "Roraima",
+      "households_total": 177418,
+      "uf": "RR",
+      "households_network_main": 144273,
+      "pct": 81.3181
+    },
+    {
+      "ibge_code": "15",
+      "name": "Pará",
+      "households_total": 2444319,
+      "uf": "PA",
+      "households_network_main": 1195348,
+      "pct": 48.9031
+    },
+    {
+      "ibge_code": "16",
+      "name": "Amapá",
+      "households_total": 201021,
+      "uf": "AP",
+      "households_network_main": 87208,
+      "pct": 43.3825
+    },
+    {
+      "ibge_code": "17",
+      "name": "Tocantins",
+      "households_total": 513796,
+      "uf": "TO",
+      "households_network_main": 419993,
+      "pct": 81.7431
+    },
+    {
+      "ibge_code": "21",
+      "name": "Maranhão",
+      "households_total": 2091583,
+      "uf": "MA",
+      "households_network_main": 1383607,
+      "pct": 66.1512
+    },
+    {
+      "ibge_code": "22",
+      "name": "Piauí",
+      "households_total": 1071549,
+      "uf": "PI",
+      "households_network_main": 825847,
+      "pct": 77.0704
+    },
+    {
+      "ibge_code": "23",
+      "name": "Ceará",
+      "households_total": 3020374,
+      "uf": "CE",
+      "households_network_main": 2392416,
+      "pct": 79.2093
+    },
+    {
+      "ibge_code": "24",
+      "name": "Rio Grande do Norte",
+      "households_total": 1141873,
+      "uf": "RN",
+      "households_network_main": 969873,
+      "pct": 84.937
+    },
+    {
+      "ibge_code": "25",
+      "name": "Paraíba",
+      "households_total": 1372108,
+      "uf": "PB",
+      "households_network_main": 1022066,
+      "pct": 74.4887
+    },
+    {
+      "ibge_code": "26",
+      "name": "Pernambuco",
+      "households_total": 3184223,
+      "uf": "PE",
+      "households_network_main": 2270335,
+      "pct": 71.2995
+    },
+    {
+      "ibge_code": "27",
+      "name": "Alagoas",
+      "households_total": 1041552,
+      "uf": "AL",
+      "households_network_main": 709672,
+      "pct": 68.136
+    },
+    {
+      "ibge_code": "28",
+      "name": "Sergipe",
+      "households_total": 782919,
+      "uf": "SE",
+      "households_network_main": 668606,
+      "pct": 85.3991
+    },
+    {
+      "ibge_code": "29",
+      "name": "Bahia",
+      "households_total": 5088635,
+      "uf": "BA",
+      "households_network_main": 4229907,
+      "pct": 83.1246
+    },
+    {
+      "ibge_code": "31",
+      "name": "Minas Gerais",
+      "households_total": 7533434,
+      "uf": "MG",
+      "households_network_main": 6621359,
+      "pct": 87.893
+    },
+    {
+      "ibge_code": "32",
+      "name": "Espírito Santo",
+      "households_total": 1428739,
+      "uf": "ES",
+      "households_network_main": 1204535,
+      "pct": 84.3076
+    },
+    {
+      "ibge_code": "33",
+      "name": "Rio de Janeiro",
+      "households_total": 6152051,
+      "uf": "RJ",
+      "households_network_main": 5211812,
+      "pct": 84.7167
+    },
+    {
+      "ibge_code": "35",
+      "name": "São Paulo",
+      "households_total": 16224248,
+      "uf": "SP",
+      "households_network_main": 15533337,
+      "pct": 95.7415
+    },
+    {
+      "ibge_code": "41",
+      "name": "Paraná",
+      "households_total": 4209432,
+      "uf": "PR",
+      "households_network_main": 3739267,
+      "pct": 88.8307
+    },
+    {
+      "ibge_code": "42",
+      "name": "Santa Catarina",
+      "households_total": 2806100,
+      "uf": "SC",
+      "households_network_main": 2367142,
+      "pct": 84.357
+    },
+    {
+      "ibge_code": "43",
+      "name": "Rio Grande do Sul",
+      "households_total": 4256082,
+      "uf": "RS",
+      "households_network_main": 3687424,
+      "pct": 86.6389
+    },
+    {
+      "ibge_code": "50",
+      "name": "Mato Grosso do Sul",
+      "households_total": 979669,
+      "uf": "MS",
+      "households_network_main": 854236,
+      "pct": 87.1964
+    },
+    {
+      "ibge_code": "51",
+      "name": "Mato Grosso",
+      "households_total": 1278142,
+      "uf": "MT",
+      "households_network_main": 1031990,
+      "pct": 80.7414
+    },
+    {
+      "ibge_code": "52",
+      "name": "Goiás",
+      "households_total": 2572930,
+      "uf": "GO",
+      "households_network_main": 2175256,
+      "pct": 84.5439
+    },
+    {
+      "ibge_code": "53",
+      "name": "Distrito Federal",
+      "households_total": 988191,
+      "uf": "DF",
+      "households_network_main": 922653,
+      "pct": 93.3679
+    }
+  ]
+}
