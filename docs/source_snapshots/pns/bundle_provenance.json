@@ -1,0 +1,205 @@
+{
+  "schemaVersion": "pns-ovarian-1.5",
+  "sourceDirectory": "frontend/data/pns",
+  "pipelineScript": "scripts/build_pns2019.py",
+  "pipelineSha256": "d5ada80855696b82c81c8947ff10af00184bef03caf247a58583ceb9f5c3aedb",
+  "microdataIncluded": false,
+  "aggregateFiles": [
+    {
+      "path": "frontend/data/pns/manifest.json",
+      "bytes": 11205,
+      "sha256": "621081b1cf51201176530af49a0b0ef3899f7e9af61ef46498cf247874124a64"
+    },
+    {
+      "path": "frontend/data/pns/summary.json",
+      "bytes": 409191,
+      "sha256": "cec554ce865fcc417d8d576b15e2561275eeb4e983cadbce79d8db3ef2d3a967"
+    },
+    {
+      "path": "frontend/data/pns/uf/AC.json",
+      "bytes": 2066507,
+      "sha256": "b507297e7ecda5ae39010b24b5710d1ad69786222b38a5b58a8ba7056008b05f"
+    },
+    {
+      "path": "frontend/data/pns/uf/AL.json",
+      "bytes": 2040823,
+      "sha256": "9d79c720f9ed1b8193c9ef7a70a04a7cf391533777f7f86fe88b463f8fa38f9f"
+    },
+    {
+      "path": "frontend/data/pns/uf/AM.json",
+      "bytes": 2037517,
+      "sha256": "c4377e9d22401a98767b15f6716d41d61498454ce873736787f4c0f3d045e252"
+    },
+    {
+      "path": "frontend/data/pns/uf/AP.json",
+      "bytes": 2079972,
+      "sha256": "919840d3116fd585120ca16f251d941dbdd1666908439287c80432a48e2f4501"
+    },
+    {
+      "path": "frontend/data/pns/uf/BA.json",
+      "bytes": 2045227,
+      "sha256": "8a12eb2af6ddc165046498df2ccee7dd11be1870370d24c56bbe98143722a3b2"
+    },
+    {
+      "path": "frontend/data/pns/uf/BR.json",
+      "bytes": 1983063,
+      "sha256": "917cbd6fc9019683195b9e6133ac42d3de6e894b6863411bdbeaa5f7aa94cc5e"
+    },
+    {
+      "path": "frontend/data/pns/uf/CE.json",
+      "bytes": 2037490,
+      "sha256": "14a9ebe90cb61da42d6b544cfbcb79bec1e263bb609c236cbb21c9e6770ee677"
+    },
+    {
+      "path": "frontend/data/pns/uf/DF.json",
+      "bytes": 2045455,
+      "sha256": "24f74fb70c80252ef44fc28e0c2718b4745ccba967800a5c1b4c03680be603fa"
+    },
+    {
+      "path": "frontend/data/pns/uf/ES.json",
+      "bytes": 2031093,
+      "sha256": "e77eb11a40926d7330df1ef96a7d71630d580e1b7c72b94493e5c577e3f75bbc"
+    },
+    {
+      "path": "frontend/data/pns/uf/GO.json",
+      "bytes": 2049891,
+      "sha256": "c0594bb103c28b68a1c454218c9186f9879a5171de8fb1a612589fdee5c9d593"
+    },
+    {
+      "path": "frontend/data/pns/uf/MA.json",
+      "bytes": 2032499,
+      "sha256": "1156e558046136beae94947a900b91a513bd80aa3cb19b5645467fc3a7698955"
+    },
+    {
+      "path": "frontend/data/pns/uf/MG.json",
+      "bytes": 2026906,
+      "sha256": "d7ede633812ed97657749f2fc0b8b86ec9ac7c3b0e18e982ef45ea282ce37d30"
+    },
+    {
+      "path": "frontend/data/pns/uf/MS.json",
+      "bytes": 2039037,
+      "sha256": "925f7067e25705826dcf2fbb1ac5cffd3ddb41538a01f14b3d455e90811cf721"
+    },
+    {
+      "path": "frontend/data/pns/uf/MT.json",
+      "bytes": 2056659,
+      "sha256": "e0865d70f6d69507e806d5cdd9ac224e5f600b6bf5bb592cdc02f1a6ca5a6c6f"
+    },
+    {
+      "path": "frontend/data/pns/uf/PA.json",
+      "bytes": 2041443,
+      "sha256": "24269ff34c4a2153cd417afd3608a973fd8d4d1544ee359ba8daa0509a6cc296"
+    },
+    {
+      "path": "frontend/data/pns/uf/PB.json",
+      "bytes": 2035449,
+      "sha256": "9c9c92dd8ad037c1b4091ecbce8ac0225d3370030e73e60382c83bc5c7174249"
+    },
+    {
+      "path": "frontend/data/pns/uf/PE.json",
+      "bytes": 2030452,
+      "sha256": "c0b59c2c61cba8c8346ae3a803af863a386f1f1303ed7dbd0c4578af76d662ec"
+    },
+    {
+      "path": "frontend/data/pns/uf/PI.json",
+      "bytes": 2042509,
+      "sha256": "57463894dfd5486f65158a0dfb76ba182c12b0c86d259cd475dbc3ce19517694"
+    },
+    {
+      "path": "frontend/data/pns/uf/PR.json",
+      "bytes": 2040083,
+      "sha256": "2148db6a8184a4cdd9de72ac01ee90677479fc9a13b38f64c3fbcb59621e5588"
+    },
+    {
+      "path": "frontend/data/pns/uf/RJ.json",
+      "bytes": 2009635,
+      "sha256": "319ea178176e279d2431e0e8bdfd5ed59d2b864a36e902fa5fd91101e90bcce7"
+    },
+    {
+      "path": "frontend/data/pns/uf/RN.json",
+      "bytes": 2045249,
+      "sha256": "f438f4fbbd7c10112f42673fcde7ab9ef29657140fc50c891164a53943b5583f"
+    },
+    {
+      "path": "frontend/data/pns/uf/RO.json",
+      "bytes": 2061743,
+      "sha256": "3eca519826bde5ebdb5375053dd3b4c0979ca3d434ee96316353badd7deadf54"
+    },
+    {
+      "path": "frontend/data/pns/uf/RR.json",
+      "bytes": 2073635,
+      "sha256": "632af71e20791a8b3fdfa9ab3fe9aac24ca943a9639862d507a2663c71b35337"
+    },
+    {
+      "path": "frontend/data/pns/uf/RS.json",
+      "bytes": 2034934,
+      "sha256": "14ddba68a4400d0b4d04951f307c0da4915132757c4cdfbdb4781209d75c8dea"
+    },
+    {
+      "path": "frontend/data/pns/uf/SC.json",
+      "bytes": 2038046,
+      "sha256": "12720e676e634a8d8e37db7ca00e9b4be925c624d3dbc2f224b81a892e603a6d"
+    },
+    {
+      "path": "frontend/data/pns/uf/SE.json",
+      "bytes": 2046347,
+      "sha256": "0e08042516181bfc4ae0e3d8e14534040851779010e6be74205734b4c75cdc62"
+    },
+    {
+      "path": "frontend/data/pns/uf/SP.json",
+      "bytes": 2012496,
+      "sha256": "b62d9122e1b708a20d790741df19a3a1e958050d2d66fc263db39ec204109d52"
+    },
+    {
+      "path": "frontend/data/pns/uf/TO.json",
+      "bytes": 2062147,
+      "sha256": "4e13d82409e73d3f016634e6632bedda2200433d9f32f1c271447cffa3e8e8a7"
+    }
+  ],
+  "retainedOfficialDocuments": [
+    {
+      "file": "questionario_PNS2019_doc5569.pdf",
+      "sha256": "002375abd5f97d4c3caf6367c6a27c2a48d676549d5b333875facbf7757eb636",
+      "bytes": 573683
+    },
+    {
+      "file": "dicionario_PNS_microdados_2019.xls",
+      "sha256": "cc484828275f4aa539b1ff4fcbd7bf0addf62adcdc3574e49eaa4561c10faeda",
+      "bytes": 670720
+    }
+  ],
+  "projectName": "Marie Câncer de Ovário",
+  "builtAt": "2026-10-18T10:08:03.756718+00:00",
+  "reproductionCommand": "python scripts/build_pns2019.py --source-dir data_raw/pns2019 --dictionary docs/source_snapshots/pns/dicionario_PNS_microdados_2019.xls --out-dir frontend/data/pns",
+  "snapshotProcedure": "O build produz manifest.json, validation.json e validation_report.txt no diretório de saída. Para o pacote publicado, manifest é copiado e validation/report são transferidos para docs/source_snapshots/pns; a pasta frontend/data/pns conserva somente manifest, summary e agregados por UF.",
+  "validationCommand": "node scripts/validate_frontend_data.cjs",
+  "validationScript": "scripts/validate_frontend_data.cjs",
+  "validationScriptSha256": "47cacab791b039ce83d7b955a460e0da15c371bf3a7ec23a0141ef6b91cfca72",
+  "validationFiles": [
+    {
+      "path": "docs/source_snapshots/pns/manifest.json",
+      "bytes": 11205,
+      "sha256": "621081b1cf51201176530af49a0b0ef3899f7e9af61ef46498cf247874124a64"
+    },
+    {
+      "path": "docs/source_snapshots/pns/validation.json",
+      "bytes": 8793,
+      "sha256": "eff48637fa171c621e60e6c8842c19e8815d8b8ce2c911cb76605ec43027de8f"
+    },
+    {
+      "path": "docs/source_snapshots/pns/validation_report.txt",
+      "bytes": 3399,
+      "sha256": "33c0fadae2b46922518ecc9fe57277826a33a720319939c56dacc44de34422b1"
+    },
+    {
+      "path": "docs/source_snapshots/pns/exploratory_validation.json",
+      "bytes": 1120,
+      "sha256": "dce7bcae83f66c7e01e896760a8821c8f4a6dfa600ee50507eec2655349ce74e"
+    },
+    {
+      "path": "docs/source_snapshots/pns/frontend_validation.json",
+      "bytes": 1001,
+      "sha256": "bb09f942f07e635a8b5752737965eafd3ecb07bb04a6e142cb785055da640859"
+    }
+  ]
+}

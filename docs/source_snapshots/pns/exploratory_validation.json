@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "pns-ovarian-1.5",
+  "passed": true,
+  "comparisonWithPriorSchema": "pns-ovarian-1.4",
+  "unchangedPublishedNumericFields": 957671,
+  "formerlyNullFieldsNowAvailable": 594278,
+  "unchangedSourceParsingDesignAndVariableFunctions": [
+    "load_layout",
+    "read_selected",
+    "__init__",
+    "variance_from_psu",
+    "variance",
+    "derive"
+  ],
+  "priorPipelineSha256": "3f58dce38697b5086bcf4840b3c78a6a4de8704540e02f8183e403d1346b4d6b",
+  "pipelineSha256": "d5ada80855696b82c81c8947ff10af00184bef03caf247a58583ceb9f5c3aedb",
+  "explanation": "Todos os campos numéricos previamente divulgados nas estruturas correspondentes conservaram exatamente seus valores. A mudança torna disponíveis pontos e contagens antes omitidos, acrescenta avisos e evita ICs não informativos nos limites ou com variância numericamente residual.",
+  "aggregateContractAudit": {
+    "territories": 28,
+    "proportions": 319872,
+    "inconclusive": 107185,
+    "boundaries": 40220,
+    "noData": 108585,
+    "crosses": 12320
+  },
+  "aggregateContractCommand": "node scripts/validate_frontend_data.cjs --raw-only"
+}

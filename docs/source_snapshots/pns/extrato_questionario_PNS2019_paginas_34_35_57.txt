@@ -1,0 +1,314 @@
+Fonte: https://biblioteca.ibge.gov.br/visualizacao/instrumentos_de_coleta/doc5569.pdf
+SHA256 PDF: 002375abd5f97d4c3caf6367c6a27c2a48d676549d5b333875facbf7757eb636
+Extração textual sem correção editorial; páginas físicas 34, 35 e 57.
+
+
+PÁGINA FÍSICA 34
+34
+Módulo P - Estilos de Vida
+Entrevistador leia: Neste módulo, vou lhe fazer perguntas sobre o seu estilo de vida, como hábitos de alimentação, prática de 
+                                                        atividade física uso de bebidas alcoólicas e fumo.
+P1a. O(a) Sr(a) sabe seu peso?
+(siga P2a)
+1. Sim, qual?
+Quilogramas
+2. Não sabe / Não lembra
+P00102
+P00103
+P2a. Quanto tempo faz que o(a) sr(a) se pesou da última vez?
+1. Menos de uma semana 4. De três meses até menos
+ de seis meses
+2. De uma semana até menos
+ de um mês 5. De seis meses ou mais
+3. De um mês até menos de 
+três meses 6. Nunca se pesou
+P00201
+(siga P4a)
+P4a. O(a) Sr(a) sabe sua altura?
+(Se C006 = 1, passe P6a. Se C006 = 2, siga P5)
+1. Sim, qual?
+Centímetros
+2. Não sabe / Não lembra
+P00402P00403
+P5. A Sra está grávida no momento?
+(siga P6a)
+1. Sim 2. Não 3. Não sabe 
+P005
+Agora vamos conversar sobre sua alimentação. Vou fazer algumas perguntas sobre alimentos que você consumiu ONTEM.
+                                                     Vamos começar com alimentos naturais ou básicos.
+1. Sim
+(siga P00602)
+P00602
+2. Não
+a. Arroz, macarrão, polenta, cuscuz ou milho verde?
+1. Sim
+(siga P00603)
+2. Não
+b. Batata comum, mandioca/aipim/macaxeira, cará ou inhame?
+P00601
+P6a. Ontem, o(a) Sr(a) comeu:
+P00603
+1. Sim
+(siga P00604)
+2. Não
+c. Feijão, ervilha, lentilha ou grão de bico?
+1. Sim
+(siga P00605)
+2. Não
+d. Carne de boi, porco, frango ou peixe? P00604
+1. Sim
+(siga P00607)
+2. Não
+e. Ovo (frito, cozido ou mexido)? P00605
+1. Sim
+(siga P00608)
+2. Não
+g.  Alface, couve, brócolis, agrião ou espinafre?P00607
+1. Sim
+(siga P00609)
+P00609
+2. Não
+h. Abóbora, cenoura, batata doce ou quiabo/caruru?
+1. Sim
+(siga P00610)
+2. Não
+i.Tomate, pepino, abobrinha, berinjela, chuchu ou beterraba?
+P00608
+P00610
+1. Sim
+(siga P00611)
+2. Não
+j. Mamão, manga, melão amarelo ou pequi?
+1. Sim
+(siga P00612)
+2. Não
+k. Laranja, banana, maçã ou abacaxi?? P00611
+1. Sim
+(siga P00613)
+2. Não
+l. Leite? P00612
+1. Sim
+(siga P6b)
+2. Não
+m.  Amendoim, castanha de caju ou castanha do Brasil/Pará?P00613
+Agora vou fazer perguntar sobre produtos industrializados consumidos
+1. Sim
+(siga P00615)
+P00615
+2. Não
+a. Refrigerante?
+1. Sim
+(siga P00616)
+2. Não
+b. Suco de fruta em caixinha ou lata ou refresco em pó?
+P00614
+P6b. Ontem, o(a) Sr(a) tomou ou comeu:
+P00616
+1. Sim
+(siga P00617)
+2. Não
+c. Bebida achocolatada ou iogurte com sabor?
+1. Sim
+(siga P00618)
+2. Não
+d. Salgadinho de pacote ou biscoito/bolacha salgado?P00617
+1. Sim
+(siga P00619)
+2. Não
+e. Biscoito/bolacha doce ou recheado ou bolo de pacote?P00618
+1. Sim
+(siga P00620)
+P00620
+2. Não
+f. Sorvete, chocolate, gelatina, flan ou outra sobremesa industrializada?
+1. Sim
+(siga P00621)
+2. Não
+g..Salsinha, linguiça, mortadela ou presunto?
+P00619
+P00621
+1. Sim
+(siga P00622)
+2. Não
+h. Pão de forma, de cachorro-quente ou de hambúrguer?
+1. Sim
+(siga P00623)
+2. Não
+i. Margarina, maionese, ketchup ou outros molhos industrializados?
+P00622
+1. Sim (siga P6) 2. Não
+j. Macarrão instantâneo, sopa de pacote, lasanha congelada ou outro prato 
+congelado comprado pronto industrializado?
+P00623
+
+PÁGINA FÍSICA 35
+35
+P6. Em quantos dias da semana o(a) Sr(a) costuma comer feijão?
+(siga P9a)Dias
+0. Nunca ou menos de uma vez por semana
+Agora vou fazer algumas perguntas sobre seu hábito de consumo de alguns alimentos. Considere sempre o consumo 
+                                                                                  médio desses alimentos
+P006 P9a. Em quantos dias da semana, o(a) Sr(a) costuma comer pelo menos um tipo de
+verdura ou legume (sem contar batata, mandioca, cará ou inhame) como alface, tomate, 
+couve, cenoura, chuchu, berinjela, abobrinha?
+(Se P9a >= 5, siga P10a. Se P9a < 5, passe P11a)
+0. Nunca ou menos de uma vez por semana
+P00901
+Dias
+P10a.  Em geral, o(a) Sr(a) costuma comer esse tipo de verdura ou legume:
+(siga P11a)
+1. Uma vez por dia (no almoço 
+ou no jantar)
+3. Três vezes ou mais por dia
+2. Duas vezes por dia (no almoço
+ ou no jantar)
+P01001
+P11a. Em quantos dias da semana, o(a) Sr(a) costuma comer carne vermelha (boi, 
+porco, cabrito, bode, ovelha etc.)? 
+0. Nunca ou menos de uma vez por semana
+P01101
+Dias
+P13. Em quantos dias da semana o(a) Sr(a) costuma comer frango/galinha?
+Dias
+0. Nunca ou menos de uma vez por semana
+P013
+(siga P15)
+P15. Em quantos dias da semana, o(a) Sr(a) costuma comer peixe?
+0. Nunca ou menos de uma vez por semana
+P015
+Dias
+(siga P20a)
+P20a. Em quantos dias da semana o(a) Sr(a) costuma tomar suco de caixinha/lata ou refresco em pó?
+Dias
+0. Nunca ou menos de uma vez por semana
+P02001
+(Se P20a>0, siga P21a. Se P20a = 0, passe P16a.)
+P21a. Que tipo de suco de caixinha/lata ou refresco em pó o(a) Sr(a) costuma tomar?
+(siga P16a)
+1. Diet/Light/Zero 2. Normal 3. Ambos
+P02101
+P16a. Em quantos dias da semana o(a) Sr(a) costuma tomar suco de fruta natural (incluída a polpa de fruta congelada)?
+Dias
+0. Nunca ou menos de uma vez por semana
+P01601
+(siga P18)
+P18. Em quantos dias da semana o(a) Sr(a) costuma comer frutas?
+Dias
+0. Nunca ou menos de uma vez por semana
+P018
+(Se P18 >= 5, siga P19. Se P18 < 5, passe P20b)
+P19. Em geral, quantas vezes por dia o(a) Sr(a) come frutas?
+P019
+1. Uma vez por dia
+2. Duas vezes por dia
+3. Três vezes ou mais por dia
+(siga P20b)
+P20b. Em quantos dia da semana o(a) Sr(a) costuma tomar refrigerante?
+P02002
+0. Nunca ou menos de uma vez por semana
+(Se P20b > 0, siga P21b. Se P20b = 0, passe P23)Dias
+P21b. Que tipo de refrigerante o(a0 Sr(a) costuma tomar?
+(siga P23)
+1. Diet/Light/Zero 2. Normal 3. Ambos
+P02102
+P23. Em quantos dia da semana o(a) Sr(a) costuma tomar leite? (de origem animal: vaca, cabra, búfala etc.) P023
+0. Nunca ou menos de uma vez por semana
+(Se P23 > 0, siga P24a. Se P23 = 0, passe P25a)
+Dias
+(siga P13)
+
+PÁGINA FÍSICA 57
+57
+Q119. Em geral, em que grau a doença do pulmão limita as suas atividades habituais (tais como trabalhar, realizar afazeres domésticos etc.)? Q119
+1. Não limita
+2. Um pouco
+3. Moderadamente
+4. Intensamente
+5. Muito intensamente
+(siga Q120)
+Q120. Algum médico já lhe deu o diagnóstico de câncer? Q120
+1. Sim  (siga Q121a) 
+             
+2. Não (passe Q124)
+Q121a. Foi um diagnóstico de câncer de pele?
+Q12102
+1. Sim  (siga Q121b) 
+             
+2. Não (passe Q121c)
+Q121b. O câncer de pele diagnosticado foi do tipo melanoma? Q12103
+1. Sim  2. Não 
+(siga Q121c)
+3. Não sei
+Q121c. O(a) Sr(a) tem ou teve diagnóstico de outro câncer?
+a.  Pulmão
+1. Sim 2. Não 
+Q12104
+(siga Q12105)
+b.  Cólon e reto (intestino)
+1. Sim 2. Não 
+Q12105
+(siga Q12106)
+ c.  Estômago
+1. Sim 2. Não 
+Q12106
+(siga Q12107)
+ d.  Mama (só para mulheres)
+1. Sim 2. Não 
+Q12107
+(siga Q12108)
+ e.  Colo de útero (só para mulheres)
+1. Sim 2. Não 
+Q12108
+(siga Q12109)
+  f.  Próstata (só para homens)
+1. Sim 2. Não 
+Q12109
+(siga Q121010)
+  g.  Boca, Orofaringe ou Laringe
+1. Sim 2. Não 
+Q121010
+(siga Q121011)
+h.  Bexiga
+1. Sim 2. Não 
+Q121011
+(siga Q121012)
+ i.  Linfoma ou leucemia
+1. Sim 2. Não 
+Q121012
+(siga Q121013)
+ j.  Cérebro
+1. Sim 2. Não 
+Q121013
+(siga Q121014)
+ k.  Ovário (só para mulheres)
+1. Sim 2. Não 
+Q121014
+(siga Q121015)
+ l.  Tireoide
+1. Sim 2. Não 
+Q121015
+(siga Q121016)
+ m. Outro 
+1. Sim 2. Não 
+Q121016
+Q122a.Que idade o(a) Sr(a) tinha no primeiro diagnóstico de câncer (exceto o câncer de pele não melanoma)? Q12201
+0. Menos de 1 ano
+(siga Q123a)Anos
+Q123a. Em geral, seu tratamento, ou algum problema provocado pelo câncer, limita as suas atividades profissionais ou habituais (tais como trabalhar, realizar afazeres 
+domésticos etc.)?
+Q123011. Não limita
+2. Um pouco
+3. Moderadamente
+4. Intensamente
+5. Muito intensamente
+(siga Q124)
+Q124. Algum médico já lhe deu o diagnóstico de insuficiência renal crônica? Q1241. Sim  (siga Q125) 
+             
+2. Não (passe Q128)
+Q125.Que idade o(a) Sr(a) tinha no primeiro diagnóstico de insuficiência renal crônica? Q125
+0. Menos de 1 ano
+(siga Q125a)Anos
+(Se Q12103 = 1 ou Q12104 = 1 ou Q12105 = 1 ou Q12106 = 1 ou Q12107 = 1 ou 
+ Q12108 = 1 ou Q12109 = 1 ou Q121010 = 1 ou Q121011 = 1 ou Q121012 = 1 ou 
+ Q121013 = 1 ou Q121014 = 1 ou Q121015 = 1 ou Q121016 = 1), siga Q122a. 
+ Caso contrário, passe Q124. )

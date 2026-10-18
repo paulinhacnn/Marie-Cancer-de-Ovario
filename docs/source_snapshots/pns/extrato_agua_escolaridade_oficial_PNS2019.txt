@@ -1,0 +1,173 @@
+EXTRATO LITERAL DO DICIONÁRIO OFICIAL PNS2019 — ÁGUA E ESCOLARIDADE
+Fonte: https://ftp.ibge.gov.br/PNS/2019/Microdados/Documentacao/Dicionario_e_input_20220530.zip
+Arquivo: dicionario_PNS_microdados_2019.xls
+Colunas originais separadas por |; primeiro campo é número da linha Excel (1-based).
+
+99 | 43 | 1 | A005010 | A5a | Qual é a principal forma de abastecimento de água deste domicílio | 1 | Rede geral de distribuição
+100 |  |  |  |  |  | 2 | Poço profundo ou artesiano
+101 |  |  |  |  |  | 3 | Poço raso, freático ou cacimba
+102 |  |  |  |  |  | 4 | Fonte ou nascente
+103 |  |  |  |  |  | 5 | Água da chuva armazenada
+104 |  |  |  |  |  | 6 | Outra
+105 |  |  |  |  |  | 9  | Ignorado
+106 |  |  |  |  |  |  | Não aplicável
+107 | 44 | 1 | A005012 | A5b | Este domicílio está ligado à rede geral de distribuição de água?  | 1 | Sim
+108 |  |  |  |  |  | 2 | Não 
+109 |  |  |  |  |  | 9  | Ignorado
+110 |  |  |  |  |  |  | Não aplicável
+111 | 45 | 1 | A00601 | A6a |  A água utilizada neste domicílio chega | 1 |  Canalizada em pelo menos um cômodo 
+112 |  |  |  |  |  | 2 |  Canalizada no terreno ou propriedade 
+113 |  |  |  |  |  | 3 | Não canalizada 
+114 |  |  |  |  |  | 9  | Ignorado
+115 |  |  |  |  |  |  | Não aplicável
+116 | 46 | 1 | A009010 | A9a |  A água utilizada para beber neste domicílio é | 1 |  Filtrada
+117 |  |  |  |  |  | 2 |  Fervida
+118 |  |  |  |  |  | 3 |  Tratada com hipoclorito de sódio (cloro)
+119 |  |  |  |  |  | 4 |  Tratada de outra forma no domicílio
+120 |  |  |  |  |  | 5 |  Mineral industrializada
+121 |  |  |  |  |  | 6 |  Sem tratamento no domicílio
+122 |  |  |  |  |  | 9  | Ignorado
+123 |  |  |  |  |  |  | Não aplicável
+5163 | 1514 | 1 | VDD004A |  | Nível de instrução mais elevado alcançado (pessoas de 5 anos ou mais de idade) padronizado para o Ensino Fundamental -  SISTEMA DE 9 ANOS | 1 | Sem instrução
+5164 |  |  |  |  |  | 2 | Fundamental incompleto ou equivalente
+5165 |  |  |  |  |  | 3 | Fundamental completo ou equivalente
+5166 |  |  |  |  |  | 4 | Médio incompleto ou equivalente
+5167 |  |  |  |  |  | 5 | Médio completo ou equivalente
+5168 |  |  |  |  |  | 6 | Superior incompleto ou equivalente
+5169 |  |  |  |  |  | 7 | Superior completo 
+5170 |  |  |  |  |  |  | Não aplicável
+
+QUESTIONÁRIO OFICIAL, página2; extração literal de texto do PDF:
+Fonte: https://biblioteca.ibge.gov.br/visualizacao/instrumentos_de_coleta/doc5569.pdf
+SHA256: 002375abd5f97d4c3caf6367c6a27c2a48d676549d5b333875facbf7757eb636
+Módulo A - Informações do Domicílio
+A1. Este domicílio é do tipo:
+(siga A2a)
+1. Alvenaria com revestimento
+   ou taipa revestida
+(siga A3a)
+3. Taipa sem revestimento
+2. Alvenaria sem revestimento
+4. Madeira apropriada para
+  construção (aparelhada)
+5. Madeira aproveitada
+A2a. Qual é o material que predomina na construção das paredes externas deste domicílio? 
+6. Outro material: 
+1. Telha sem laje de concreto
+(siga A4a)
+3. Somente laje de concreto
+2. Telha com laje de concreto
+4. Madeira apropriada para 
+   construção (aparelhada)
+5. Zinco, alumínio ou
+    chapa metálica
+A3a. Qual é o material que predomina na cobertura (telhado) deste domicílio?
+6. Outro material  
+1.Cerâmica, lajota ou pedra
+(inclusive outros pisos frios 
+como porcelanato e granito)
+(siga A10a)
+2. Madeira apropriada para construção
+    (aparelhada) (tábua corrida,  taco, 
+    parquet e laminado)
+4. Terra
+A4a. Qual é o material que predomina no piso deste domicílio?
+5. Outro material  
+1. Casa
+2. Apartamento
+3. Habitação em casa de cômodos, cortiço 
+ou cabeça de porco
+A5b. Este domicílio está ligado
+à rede geral de distribuição de
+água?
+1. Sim
+(siga A6a)
+2. Não
+1. Rede geral de esgoto ou pluvial
+(siga A16a)
+3. Fossa séptica não ligada à rede
+4. Fossa rudimentar
+2. Fossa séptica ligada à rede
+5. Vala
+7. Outra
+A002010
+A003010 A004010
+A005012
+A01501
+A001
+2
+3. Cimento
+(siga A11)
+A10a. Quantos cômodos têm 
+  este domicílio?
+cômodos
+A01001
+(siga A5a)
+A11. Quantos cômodos 
+estão servindo 
+permanentemente de 
+dormitório para os 
+moradores deste domicílio?
+cômodos
+A011
+1. Rede geral de distribuição
+(Se A5a = 1, passe A6a, caso contrário, siga A5b.)
+3. Poço raso, freático ou cacimba
+2. Poço profundo ou artesiano
+4.Fonte ou nascente
+A5a. Qual é a principal forma de abastecimento de água deste domicílio?
+6. Outra
+A005010
+5. Água da chuva armazenada
+A6a. A água utilizada neste 
+domicílio chega:
+1. Canalizada em pelo  menos
+     um cômodo
+(siga A9a)
+2. Canalizada só no terreno ou 
+    propriedade
+A00601
+3. Não canalizada
+1. Filtrada
+3. Tratada com hipoclorito de 
+    sódio (cloro) 
+4. Tratada de outra forma no domicílio
+2. Fervida 5. Mineral industrializada
+A9a. A água utilizada para beber neste domicílio é: 
+A009010
+(siga A14a)
+6. Sem tratamento no domicílio
+A14a. Quantos banheiros (com chuveiro e vaso sanitário) de 
+uso exclusivo dos moradores existem neste domicílio, inclusive
+os localizados no terreno ou propriedade?
+(Se A14a= 0, siga A14b. Caso contrário, passe A15a.)
+banheiros
+A01401 0. Nenhum
+A14b. Quantos banheiros (com chuveiro e vaso sanitário)
+de uso comum a mais de um domicílio, existem 
+neste terreno ou propriedade?
+(Se A14b= 0, siga A14c. Caso contrário, passe A15a.)
+banheiros
+A01402 0. Nenhum
+A14c. Utiliza sanitário ou buraco para dejeções,
+inclusive os localizados no terreno ou na 
+propriedade (cercado por paredes de qualquer
+ material)  
+1. Sim 2. Não
+A01403
+(Se A14c = 1, siga A15a. Se A14c = 2, passe 
+A16a.)
+A15a. Se A14a>0 ou A14b>0:                        Se A14a = 0 e A14b = 0 e A14c = 1:
+Para onde vai o esgoto do banheiro?   OU     Para onde vai o esgoto do sanitário ou do buraco de dejeções? 
+6. Rio, lago, córrego ou mar.
+A16a. Qual o (principal) destino dado ao lixo? 
+1. Coletado diretamente por serviço de limpeza (independente
+da frequência de dias de coleta) 
+3. Queimado (na propriedade)
+2. Coletado em caçamba de serviço de limpeza
+4. Enterrado (na propriedade)
+6. Outro  
+5. Jogado em terreno baldio ou logradouro
+A016010
+(siga A18a)
+Pesquisa Nacional de Saúde

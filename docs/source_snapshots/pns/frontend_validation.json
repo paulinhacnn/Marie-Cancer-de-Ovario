@@ -1,0 +1,42 @@
+{
+  "validation": "PASS",
+  "pnsSchema": "pns-ovarian-1.5",
+  "metrics": [
+    "fruit",
+    "vegetables",
+    "beans",
+    "sugary",
+    "ultra",
+    "obesity",
+    "healthPlan",
+    "networkWater",
+    "treatedWater",
+    "higherEducation"
+  ],
+  "adultWomenSample": 46869,
+  "weightedWomen2019": 84618612.77,
+  "ovarianSample": 53,
+  "SIM2024FemaleDeaths": 4567,
+  "INCA2026EstimatedCases": 8020,
+  "pairedFruitBMI": {
+    "n": 46016,
+    "women": 83007177.43
+  },
+  "conditionalFruitGivenBMI": 50.3476,
+  "exploratoryOvarianAge30to39": {
+    "n": 5,
+    "nEvent": 2,
+    "pct": 50.3113
+  },
+  "rawAudit": {
+    "territories": 28,
+    "proportions": 319872,
+    "inconclusive": 107185,
+    "boundaries": 40220,
+    "noData": 108585,
+    "crosses": 12320
+  },
+  "command": "node scripts/validate_frontend_data.cjs",
+  "validationScriptSha256": "47cacab791b039ce83d7b955a460e0da15c371bf3a7ec23a0141ef6b91cfca72",
+  "adapterSha256": "49141bcffb9f061ff346d7584cd6ee588ff3886505b47662469bf9adc9372bc6"
+}
